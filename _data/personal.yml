@@ -1,0 +1,37 @@
+name: Ru Wang
+
+label: Senior Undergrad at SJTU, Shanghai, China
+
+picture: /img/new_logo.png
+
+email: williamwang15@gmail.com
+
+phone: +86 13167096320
+
+department: Electronic Engineering
+
+institution: Shanghai Jiao Tong University
+
+# mailing_address: >
+#   1600 Amphitheatre Parkway
+#   Mountain View, CA 94043
+
+profiles:
+  # -
+  #   network: Google Scholar
+  #   username:
+  #   url: http://scholar.google.com/citations?user=JS7sVyQAAAAJ&hl=en
+  # -
+  #   network: LinkedIn
+  #   username:
+  #   url: https://www.linkedin.com/pub/ian-li/1/681/8b0
+  # -
+  #   network: Facebook
+  #   username: Ru Wang
+  #   url: https://www.facebook.com/william.ruru.3
+
+intro:
+  title: Hello!
+  body: >
+    I'm a senior undergrad at Shanghai Jiao Tong University, focusing on digital media, machine learning and computer networks. I'm a member of IEEE Honored Class.<br><br>
+    My interests lie in **Human-Computer Interaction**, **Ubiquitous Computing** and **Computer Vision**. Please click [here](https://drive.google.com/file/d/1D5UtHjQbsYrVxAxjt5Rzx_Od_jLc1iLw/view?usp=sharing) to see my CV.
