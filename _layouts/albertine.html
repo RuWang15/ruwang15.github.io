@@ -25,7 +25,7 @@ It is threatened by habitat loss.
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ site.data.personal.name }}</title>
+  <title>{{ site.data.personal.name }} | Homepage</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
@@ -41,6 +41,8 @@ It is threatened by habitat loss.
   <![endif]-->
 
   <!-- Javascript -->
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
@@ -49,7 +51,7 @@ It is threatened by habitat loss.
   <!-- ==================== -->
   <!-- HEADER -->
   <!-- ==================== -->
-  <header>
+  <header style="padding:20px 0;">
     <div class="container">
       <div class="row">
         <div class="col-xs-9 col-lg-9">
@@ -61,10 +63,11 @@ It is threatened by habitat loss.
           </h2>
         </div>
         <div class="col-xs-3 col-lg-3">
+          <a href="{{ site.baseurl }}">
           <img src="{{ site.baseurl }}{{ site.data.personal.picture }}"
                class="img-circle"
                style="margin-top:-6px;width:56px;">
-
+          </a>
         </div>
       </div>
     </div>
@@ -86,7 +89,7 @@ It is threatened by habitat loss.
         <p>
           {{ site.data.personal.department }}<br>
           {{ site.data.personal.institution }}<br>
-          {{ site.data.personal.mailing_address | replace:'\n','<br>' }}
+          <!-- {{ site.data.personal.mailing_address | replace:'\n','<br>' }} -->
         </p>
 
         <p>
@@ -109,7 +112,7 @@ It is threatened by habitat loss.
         </p>
       </section>
 
-      <section class="col-md-8" style="margin-left:8.3333%">
+      <section class="col-md-8" style="margin-left:8.3333%; padding-top:0%">
         {% if site.data.personal.intro.title %}
           <h3 style="font-size:48px">
             {{ site.data.personal.intro.title }}
@@ -152,11 +155,11 @@ It is threatened by habitat loss.
               {{ publication.year }}
             </small>
             <br>
-            {{ publication.authors }}
-            <br>
+            {{ publication.authors | markdownify }}
+            <!-- <br> -->
             {% case publication.type %}
               {% when 'conference' %}
-                {{ publication.conference }}
+                {{ publication.conference | markdownify }}
               {% when 'dissertation' %}
                 {{ publication.publisher }}
               {% when 'journal' %}
@@ -170,6 +173,7 @@ It is threatened by habitat loss.
                 {{ publication.issue }},
                 {{ publication.pages }}
             {% endcase %}
+            <br><br>
           </p>
         {% endfor %}
       </section>
@@ -187,17 +191,24 @@ It is threatened by habitat loss.
         <h3>Projects</h3>
       </div>
     </div>
-
+    {% assign counter = 0 %}
     {% for project in site.data.projects %}
+      <div id="Project{{ counter }}" class="modal" >
+          <p>Comming Soon!<br>
+          <a href="#" rel="modal:close">Close</a>
+        </p>
+      </div>
       <div class="row" style="margin-bottom:20px;margin-top:10px">
         <div class="col-xs-4
                     col-sm-3
                     col-md-3
-                    col-lg-2" style="width:40%">
+                    col-lg-2" style="width:25%">
           <p>
-            <img src="{{ site.baseurl }}{{ project.image }}"
-                 class="img-responsive img-thumbnail"
-                 style="width:100%">
+            <a href="#Project{{ counter }}" rel="modal:open">
+              <img src="{{ site.baseurl }}{{ project.image }}"
+                   class="img-responsive img-thumbnail"
+                   style="width:100%">
+            </a>
           </p>
         </div>
         <div class="col-xs-12
@@ -211,7 +222,9 @@ It is threatened by habitat loss.
                   {{ project.name }}
                 </a>
               {% else %}
-                {{ project.name }}
+                <a href="#Project{{ counter }}" rel="modal:open" style="color:#7085B6">
+                  {{ project.name }}
+                </a>
               {% endif %}
             </b>
           </p>
@@ -225,42 +238,75 @@ It is threatened by habitat loss.
           {{ project.description | markdownify }}
         </div>
       </div>
+      {% assign counter = counter | plus:1 %}
     {% endfor %}
   </section>
   {% endif %}
 
-  {% if site.data.presentations.size > 0 %}
+  {% if site.data.designs.size > 0 %}
   <!-- ==================== -->
-  <!-- PRESENTATIONS -->
+  <!-- PROJECTS -->
   <!-- ==================== -->
   <section class="container">
     <div class="row">
       <div class="col-md-9">
-        <h3>Presentations</h3>
+        <h3>Designs</h3>
       </div>
     </div>
-
-    {% for presentation in site.data.presentations %}
-      <div class="row">
-        <div class="col-md-9">
+    {% assign counter = 0 %}
+    {% for design in site.data.designs %}
+      <div id="Design{{ counter }}" class="modal" >
+          <p>Comming Soon!<br>
+          <a href="#" rel="modal:close">Close</a>
+        </p>
+      </div>
+      <div class="row" style="margin-bottom:20px;margin-top:10px">
+        <div id="img1" class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2" style="width:33%">
           <p>
-            <b>
-              {% if presentation.slides_url %}
-                <a href="{{ presentation.slides_url }}" style="color:#7085B6">
-                  {{ presentation.title }}
-                </a>
-              {% else %}
-                {{ presentation.title }}
-              {% endif %}
-            </b>
-            <small>
-              {{ presentation.date }}
-            </small>
-            <br>
-            {{ presentation.location }}
+            <a href="#Design{{ counter }}" rel="modal:open">
+              <img src="{{ site.baseurl }}{{ design.image1 }}"
+                   class="img-responsive img-thumbnail"
+                   style="width:100%;padding:0;border:0">
+            </a>
           </p>
         </div>
+        <div id="img2" class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2" style="width:33%">
+          <p>
+            <a href="#Design{{ counter }}" rel="modal:open">
+              <img src="{{ site.baseurl }}{{ design.image2 }}"
+                   class="img-responsive img-thumbnail"
+                   style="width:100%;padding:0;border:0">
+            </a>
+          </p>
+        </div>
+        <div id="img3" class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2" style="width:33%">
+          <p>
+            <a href="#Design{{ counter }}" rel="modal:open">
+              <img src="{{ site.baseurl }}{{ design.image3 }}"
+                   class="img-responsive img-thumbnail"
+                   style="width:100%;padding:0;border:0">
+            </a>
+          </p>
+        </div>
+        <div class="col-xs-12
+                    col-sm-9
+                    col-md-6
+                    col-lg-7" style="width:100%">
+
+          {{ design.description | markdownify }}
+
+        </div>
       </div>
+      {% assign counter = counter | plus:1 %}
     {% endfor %}
   </section>
   {% endif %}
@@ -283,7 +329,7 @@ It is threatened by habitat loss.
           <a href="http://www.elbowpatched.com" style="color:#7085B6">
             Elbowpatched
           </a> -->
-          <p> Ru Wang 2018 </p>
+          <p> Ru Wang 2018 | Template Powered By <a href="http://www.ianli.com" target="_blank">Ian Li</a> </p>
         </div>
       </div>
     </div>
@@ -292,7 +338,12 @@ It is threatened by habitat loss.
   <!-- ==================== -->
   <!-- JAVASCRIPTS -->
   <!-- ==================== -->
-  <script src="/assets/albertine/color_shift.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
   <script>
     $(document).ready(function () {
       $('#section-about').waypoint(function (direction) {

@@ -1,28 +1,18 @@
 -
-  type: journal
-  title: Journal
-  authors: XXX
-  journal: ACM Transactions on Computer Human Interaction
-  volume: 19
-  issue: 1
-  year: 2012
-  month: March
-  pdf: http://google.com
-  url: http://google.com
--
-  type: dissertation
-  title: Dissertation
-  authors: XXX
-  year: 2011
-  publisher: Carnegie Mellon University
-  pdf: http://google.com
-  url: http://google.com
+  type: conference
+  title: 'ThumbTrak: Continuous One-handed Thumb-on-fingers Input with a Ring'
+  # authors: '*In preparation*'
+  conference: '*In preparation*'
+  # Ubicomp '19
+  year: 2018
+  # pdf: http://google.com
+  # url: http://google.com
 -
   type: conference
-  title: Conference
-  authors: XXX
-  conference: Proceedings of UbiComp 2011
-  year: 2011
-  pages: 405-414
-  pdf: http://google.com
-  url: http://google.com
+  title: Approximate Random Dropout for DNN training acceleration in GPGPU
+  authors: Zhuoran Song, **Ru Wang**, Dongyu Ru, Hongru Huang, Zhenghao Peng, Jing Ke, Xiaoyao Liang, Li Jiang
+  conference: '*DATE 2019*'
+  year: 2018
+  # pages: 405-414
+  # pdf: http://google.com
+  pdf: 'https://www.date-conference.com/booklet/proof_reading#2.6'
