@@ -10,7 +10,7 @@
 -
   type: conference
   title: Approximate Random Dropout for DNN training acceleration in GPGPU
-  authors: Zhuoran Song, **Ru Wang**, Dongyu Ru, Hongru Huang, Zhenghao Peng, Jing Ke, Xiaoyao Liang, Li Jiang
+  authors: Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
   conference: '*DATE 2019*'
   year: 2018
   # pages: 405-414

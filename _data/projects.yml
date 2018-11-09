@@ -28,7 +28,7 @@
   image: /img/proj3.png
   # url: http://google.com
 -
-  name: 'RGB-D 3D Pose Estimation (On Going)'
+  name: 'RGBD-based Single Person 3D Pose Estimation (On Going)'
   location: Shanghai Jiao Tong University
   advisor: Weiyao Lin
   description: >
