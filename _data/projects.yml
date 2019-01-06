@@ -6,7 +6,7 @@
     ThumbTrak is a continuous one-handed thumb-on-fingers input technology.
     It allows the user to use the thumb to continuously input on fingers by tracking the position of the thumb using wearable motion sensing. It consists of a thumb-ring and a wristband.
     With ThumbTrak, a user is able to input on applications in one-hand, which demands continuously input capability, such as drawing and text entry applications.
-  image: /img/proj1.jpg
+  image: /img/proj1.png
   # url: http://google.com
 -
   name: 'Approximate Random Dropout for DNN training acceleration in GPGPU'
