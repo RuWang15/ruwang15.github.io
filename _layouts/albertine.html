@@ -157,7 +157,7 @@ It is threatened by habitat loss.
         {% for publication in site.data.publications %}
           <p>
             <b>
-              <a href="{{ publication.url }}" style="color:#7085B6">
+              <a href="{{ publication.url }}" target="_blank" style="color:#7085B6">
                 {{ publication.title }}
               </a>
             </b>
@@ -206,13 +206,20 @@ It is threatened by habitat loss.
         <h3>Research Projects</h3>
       </div>
     </div>
+
     {% assign counter = 0 %}
     {% for project in site.data.projects %}
-      <div id="Project{{ counter }}" class="modal" >
-          <p>Comming Soon!<br>
-          <a href="#" rel="modal:close">Close</a>
-        </p>
-      </div>
+      {% if counter < site.data.details.size %}
+        <div id="Project{{ counter }}" class="modal">
+          <p> {{ site.data.details[counter].description | markdownify }} </p>
+          {{ site.data.details[counter].html }}
+          <p><a href="#" rel="modal:close">Close</a></p>
+        </div>
+      {% else %}
+        <div id="Project{{ counter }}" class="modal">
+          <p>Comming Soon...<a href="#" rel="modal:close"><br>Close</a></p>
+        </div>
+      {% endif %}
       <div class="row" style="margin-bottom:20px;margin-top:10px">
         <div class="col-xs-4
                     col-sm-3
@@ -244,7 +251,7 @@ It is threatened by habitat loss.
             </b>
           </p>
           <p>
-            Advised by <b>{{ project.advisor }}</b>,&nbsp;
+            Advised by Prof. {{ project.advisor }},&nbsp;
               {% if project.location %}
                 {{ project.location }}
               {% endif %}
@@ -360,7 +367,7 @@ It is threatened by habitat loss.
           <a href="http://www.elbowpatched.com" style="color:#7085B6">
             Elbowpatched
           </a> -->
-          <p> Ru Wang 2018 | Inspired By <a href="https://www.ianli.com" target="_blank">Ian Li</a> </p>
+          <p> Ru Wang 2019 | Inspired By <a href="https://www.ianli.com" target="_blank">Ian Li</a> </p>
         </div>
       </div>
     </div>

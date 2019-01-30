@@ -1,0 +1,4 @@
+-
+  description: >
+    The video below is a demo for text entry (phrase or single letter) with this device.
+  html: <iframe width="450" height="260" src="https://www.youtube.com/embed/NEGMpqcbZlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

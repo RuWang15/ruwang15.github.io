@@ -6,7 +6,7 @@
   # Ubicomp '19
   year: 2018
   # pdf: http://google.com
-  # url: http://google.com
+  url: https://youtu.be/NEGMpqcbZlE
 -
   type: conference
   title: Approximate Random Dropout for DNN training acceleration in GPGPU

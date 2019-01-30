@@ -1,15 +1,15 @@
 -
-  name: 'ThumbTrak (On Going)'
+  name: ThumbTrak (On Going)
   location: Cornell University
   advisor: Cheng Zhang
   description: >
     ThumbTrak is a continuous one-handed thumb-on-fingers input technology.
     It allows the user to use the thumb to continuously input on fingers by tracking the position of the thumb using wearable motion sensing. It consists of a thumb-ring and a wristband.
-    With ThumbTrak, a user is able to input on applications in one-hand, which demands continuously input capability, such as drawing and text entry applications.
+    With ThumbTrak, the user is able to input on applications in one-hand, which demands continuously input capability, such as drawing and text entry applications.
   image: /img/proj1.jpg
-  # url: http://google.com
+  # url: https://www.youtube.com/watch?v=NEGMpqcbZlE&feature=youtu.be
 -
-  name: 'Approximate Random Dropout for DNN training acceleration in GPGPU'
+  name: Approximate Random Dropout for DNN training acceleration in GPGPU
   location: Shanghai Jiao Tong University
   advisor: Li Jiang
   description: >
@@ -18,7 +18,7 @@
   image: /img/proj2.png
   # url: http://google.com
 -
-  name: 'Virtual Dressing System'
+  name: Virtual Dressing System
   location: Shanghai Jiao Tong University
   advisor: Weiyao Lin
   description: >
@@ -27,18 +27,18 @@
     This system can let user select clothes and try them on. The size of the clothes can be changed automatically according to the user's body shape.
   image: /img/proj3.png
   # url: http://google.com
--
-  name: 'RGBD-based Single Person 3D Pose Estimation (On Going)'
-  location: Shanghai Jiao Tong University
-  advisor: Weiyao Lin
-  description: >
-    This work is to estimate 3D human pose directly from RGB and depth images obtained by Kinect V2.
-    We first utilize a state-of-the-art 2D pose estimator to get 2D keypoints heatmaps and tile them along z-dimention. At the same time we voxelize the depth image.
-    Then the two features are combined together and fed into a Encoder-Decoder network to produce the 3D keypoints.
-  image: /img/proj4.png
+# -
+#   name: 'RGBD-based Single Person 3D Pose Estimation (On Going)'
+#   location: Shanghai Jiao Tong University
+#   advisor: Weiyao Lin
+#   description: >
+#     This work is to estimate 3D human pose directly from RGB and depth images obtained by Kinect V2.
+#     We first utilize a state-of-the-art 2D pose estimator to get 2D keypoints heatmaps and tile them along z-dimention. At the same time we voxelize the depth image.
+#     Then the two features are combined together and fed into a Encoder-Decoder network to produce the 3D keypoints.
+#   image: /img/proj4.png
   # url: http://google.com
 -
-  name: 'Driving Cognitive Workload Analysis based on RNN'
+  name: RNN-based Driver's Cognitive Workload Analysis
   location: Shanghai Jiao Tong University
   advisor: Na Ruan
   description: >
