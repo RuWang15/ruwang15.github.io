@@ -2,3 +2,7 @@
   description: >
     The video below is a demo for text entry (phrase or single letter) with this device.
   html: <iframe width="450" height="260" src="https://www.youtube.com/embed/NEGMpqcbZlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-
+  description: >
+    The image below is the result of our model. The generated fake images (fake B in below image) boosted the recall of our product classification model by 10%.
+  html: <img src="/img/gan_result.png" class="img-responsive img-thumbnail" style="width:100%">

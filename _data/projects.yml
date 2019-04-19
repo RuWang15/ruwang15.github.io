@@ -1,7 +1,7 @@
 -
-  name: ThumbTrak (On Going)
+  name: ThumbTrak
   location: Cornell University
-  advisor: Cheng Zhang
+  advisor: Prof. Cheng Zhang
   description: >
     ThumbTrak is a continuous one-handed thumb-on-fingers input technology.
     It allows the user to use the thumb to continuously input on fingers by tracking the position of the thumb using wearable motion sensing. It consists of a thumb-ring and a wristband.
@@ -9,9 +9,19 @@
   image: /img/proj1.jpg
   # url: https://www.youtube.com/watch?v=NEGMpqcbZlE&feature=youtu.be
 -
+  name: GAN-based On-Shelf Product Image Generation for Product Classification (On Going)
+  location: Clobotics Co.,Ltd
+  advisor: Dr. Cong Yang, Prof. Weiyao Lin
+  description: >
+    We collected 50k+ real product (beverage) images with a self-built turntable, and cameras from 5 different angles.
+    Then we use the images from our dataset, together with real on-shelf product images downloaded from our database to train a Cycle-GAN based model.
+    The model can generate fake on-shelf product images which can be further used to train our product classification models, aiming at reducing the cost of manual data labeling.
+    The model changes the shadow, lighting, and the background of the input image to make it more resemble an on-shelf image.
+  image: /img/gan_stage_res.png
+-
   name: Approximate Random Dropout for DNN training acceleration in GPGPU
   location: Shanghai Jiao Tong University
-  advisor: Li Jiang
+  advisor: Prof. Li Jiang
   description: >
     The training phases of DNN consumes enormous processing time and energy, and conventional compression techniques can hardly be used in the training phase.
     We propose the Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
@@ -20,7 +30,7 @@
 -
   name: Virtual Dressing System
   location: Shanghai Jiao Tong University
-  advisor: Weiyao Lin
+  advisor: Prof. Weiyao Lin
   description: >
     This system is based on a RGBD camera (Kinect V2) and OpenPose.
     We use Kinect SDK to retrieve 3D human pose and refine the 3D skeleton with 2D pose estimation obtained by OpenPose, and reproject the refined 2D skeleton back to 3D space using depth information.
@@ -37,13 +47,13 @@
 #     Then the two features are combined together and fed into a Encoder-Decoder network to produce the 3D keypoints.
 #   image: /img/proj4.png
   # url: http://google.com
--
-  name: RNN-based Driver's Cognitive Workload Analysis
-  location: Shanghai Jiao Tong University
-  advisor: Na Ruan
-  description: >
-    This work is to estimate driver's cognitive workload while driving.
-    We use physiological data and driver's self-ratings while driving to generate ground truth and build a RNN-based realtime estimation system using only vehicle data such as acceleration and speed.
-
-  image: /img/proj5.png
-  # url: http://google.com
+# -
+#   name: RNN-based Driver's Cognitive Workload Analysis
+#   location: Shanghai Jiao Tong University
+#   advisor: Na Ruan
+#   description: >
+#     This work is to estimate driver's cognitive workload while driving.
+#     We use physiological data and driver's self-ratings while driving to generate ground truth and build a RNN-based realtime estimation system using only vehicle data such as acceleration and speed.
+#
+#   image: /img/proj5.png
+#   # url: http://google.com
