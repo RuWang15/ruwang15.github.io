@@ -1,19 +1,10 @@
 -
   type: conference
-  title: 'ThumbTrak: Continuous One-handed Thumb-on-fingers Input with a Ring'
-  # authors: '*In preparation*'
-  conference: '*In preparation*'
-  # Ubicomp '19
-  year: 2018
-  # pdf: http://google.com
-  url: https://youtu.be/NEGMpqcbZlE
--
-  type: conference
   title: Approximate Random Dropout for DNN training acceleration in GPGPU
   authors: Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
   conference: '*DATE (Design, Automation and Test in Europe) 2019*'
   year: 2018
   # pages: 405-414
   # pdf: http://google.com
-  pdf: /pdfs/ard_date2019.pdf
+  # pdf: /pdfs/ard_date2019.pdf
   url: https://ieeexplore.ieee.org/abstract/document/8715135
