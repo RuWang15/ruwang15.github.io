@@ -1,0 +1,2 @@
+I"‚<p>The training phases of DNN consumes enormous processing time and energy, and conventional compression techniques can hardly be used in the training phase. We propose the Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.</p>
+:ET

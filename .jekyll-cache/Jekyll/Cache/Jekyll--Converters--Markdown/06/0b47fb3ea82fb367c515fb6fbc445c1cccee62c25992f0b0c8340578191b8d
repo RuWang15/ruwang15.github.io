@@ -1,0 +1,2 @@
+I" <p>This system is based on a RGBD camera (Kinect V2) and OpenPose. We use Kinect SDK to retrieve 3D human pose and refine the 3D skeleton with 2D pose estimation obtained by OpenPose, and reproject the refined 2D skeleton back to 3D space using depth information. This system can let user select clothes and try them on. The size of the clothes can be changed automatically according to the userâ€™s body shape.</p>
+:ET

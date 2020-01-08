@@ -1,0 +1,2 @@
+I"�<p>We collected 50k+ real product (beverage) images with a self-built turntable, and cameras from 5 different angles. Then we use the images from our dataset and real on-shelf product images from our database to train a Cycle-GAN model. The model can generate ‘fake’ on-shelf product images which can be further used to train our product classification models, aiming at reducing the cost of manual data annotation.</p>
+:ET

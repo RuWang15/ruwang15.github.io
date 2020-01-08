@@ -1,5 +1,9 @@
 -
   description: >
+    The video below is a demo for GrandpARents. We showed the basic functionalities of our system. Click the title of this project for more details.
+  html: <iframe width="450" height="260" src="https://www.youtube.com/embed/fitDsPpxFF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-
+  description: >
     The video below is a demo for text entry (phrase or single letter) with this device. Click the title of this project for more details.
   html: <iframe width="450" height="260" src="https://www.youtube.com/embed/NEGMpqcbZlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -
