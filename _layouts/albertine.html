@@ -112,7 +112,7 @@ It is threatened by habitat loss.
             {% elsif profile.network == 'Twitter' %}
               <i class="fa fa-twitter-square"></i>
             {% endif %}
-            <a href="{{ profile.url }}" style="color:#7085B6">
+            <a href="{{ profile.url }}">
               {{ profile.network }}
             </a>
             {% if forloop.last == false %}
@@ -157,12 +157,12 @@ It is threatened by habitat loss.
         {% for publication in site.data.publications %}
           <p>
             <b>
-              <a href="{{ publication.url }}" target="_blank" style="color:#7085B6">
+              <a href="{{ publication.url }}" target="_blank" >
                 {{ publication.title }}
               </a>
             </b>
             {% if publication.pdf %}
-              <a href="{{ publication.pdf }}" style="color:#7085B6">
+              <a href="{{ publication.pdf }}">
                 [PDF]
               </a>
             {% endif %}
@@ -240,11 +240,11 @@ It is threatened by habitat loss.
           <p>
             <b>
               {% if project.url %}
-                <a href="{{ project.url }}" style="color:#7085B6">
+                <a href="{{ project.url }}">
                   {{ project.name }}
                 </a>
               {% else %}
-                <a href="#Project{{ counter }}" rel="modal:open" style="color:#7085B6">
+                <a href="#Project{{ counter }}" rel="modal:open">
                   {{ project.name }}
                 </a>
               {% endif %}
@@ -365,7 +365,7 @@ It is threatened by habitat loss.
           <a href="http://www.elbowpatched.com" style="color:#7085B6">
             Elbowpatched
           </a> -->
-          <p> Ru Wang 2019 | Inspired By <a href="https://www.ianli.com" target="_blank">Ian Li</a> </p>
+          <p> Ru Wang 2020 | Inspired By <a href="https://www.ianli.com" target="_blank">Ian Li</a> </p>
         </div>
       </div>
     </div>
