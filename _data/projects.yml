@@ -1,9 +1,33 @@
 -
-  name: GrandpARents
+  name: Adaptive workload-management system based on portable EEG headset (Ongoing)
+  location: UCSD
+  advisor: Prof. Xinyu Zhang
+  description: >
+    We built a closed-loop system that aims to mitigate the user's cognitive+visual workload level when performing daily tasks, such as paper reading and arithmetic problem solving. 
+    We measure the user's workload by EEG signal collected from Muse (a commercial EEG headset). Workload levels are defined by N-back tasks and we use a deep learning model for classification. 
+    We designed different mitigation strategies for different tasks...
+  image: /img/eeg.jpg
+- 
+  name: Gazescape (Ongoing)
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >
-    GrandpARents is an AR-based system on HoloLens that helps elderly people with visual and/or hearing impairments to cope with their daily tasks.
+    Eye contact plays an important role in a successful and effective group discussion. However, as all classes are moved online during the pandemic, students use video conferencing tools, such as Zoom, for remote discussion, 
+    which lacks this important visual cue for communication. We propose Gazescape, a social translucent video communication system that enables eye-contact within the group to facilitate communication efficiency and students' engagement. 
+  image: /img/gazescape.jpg
+-
+  name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
+  location: UCSD
+  advisor: Prof. Nadir Weibel
+  description: >
+    ARTEMIS is a collaborative system for surgical telementoring. The surgical ﬁeld is recreated for a remote expert in VR, and the remote expert annotations and avatar are displayed into the novice’s ﬁeld of view in real-time using AR. 
+  image: /img/artemis.png
+-
+  name: GrandpARents
+  location: UCSD
+  advisor: Prof. Nadir Weibel (course project for CSE218 Fall 2019)
+  description: >
+    GrandpARents is a system deployed on HoloLens that helps elderly people with visual and/or hearing impairments to cope with their daily tasks.
     There are two main features in our system. The first one is real-time subtitle for one-on-one conversations. The subtitle will be automatically generated in front of the user when someone is talking;
     the second feature is Zoom, which allows the user to magnify an area of interest by simply taking a picture and resize it with gestures.
   image: /img/gp.jpg
@@ -20,7 +44,7 @@
   url: /pdfs/Intro_ThumbTrak.pdf
 -
   name: On-Shelf Product Image Generation for Product Classification using GAN
-  location: Clobotics Co.,Ltd
+  location: Shanghai Jiao Tong University & Clobotics Co.,Ltd
   advisor: Dr. Cong Yang, Prof. Weiyao Lin
   description: >
     We collected 50k+ real product (beverage) images with a self-built turntable, and cameras from 5 different angles.
@@ -36,15 +60,15 @@
     We propose the Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
   image: /img/proj2.png
   url: https://ieeexplore.ieee.org/abstract/document/8715135
--
-  name: Virtual Dressing System
-  location: Shanghai Jiao Tong University
-  advisor: Prof. Weiyao Lin
-  description: >
-    This system is based on a RGBD camera (Kinect V2) and OpenPose.
-    We use Kinect SDK to retrieve 3D human pose and refine the 3D skeleton with 2D pose estimation obtained by OpenPose, and reproject the refined 2D skeleton back to 3D space using depth information.
-    This system can let user select clothes and try them on. The size of the clothes can be changed automatically according to the user's body shape.
-  image: /img/proj3.png
+# -
+#   name: Virtual Dressing System
+#   location: Shanghai Jiao Tong University
+#   advisor: Prof. Weiyao Lin
+#   description: >
+#     This system is based on a RGBD camera (Kinect V2) and OpenPose.
+#     We use Kinect SDK to retrieve 3D human pose and refine the 3D skeleton with 2D pose estimation obtained by OpenPose, and reproject the refined 2D skeleton back to 3D space using depth information.
+#     This system can let user select clothes and try them on. The size of the clothes can be changed automatically according to the user's body shape.
+#   image: /img/proj3.png
   # url: http://google.com
 # -
 #   name: 'RGBD-based Single Person 3D Pose Estimation (On Going)'

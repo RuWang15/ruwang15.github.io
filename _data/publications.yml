@@ -1,8 +1,22 @@
 -
   type: conference
+  title: >
+    ARTEMIS: A Collaborative Mixed-Reality Environment for Immersive Surgical Telementoring
+  authors: (Under Review)
+  conference: >
+    submitted to *CHI'21*
+  year: 2020
+  # pages: 405-414
+  # pdf: http://google.com
+  # pdf: /pdfs/ard_date2019.pdf
+  # url: https://ieeexplore.ieee.org/abstract/document/8715135
+-
+  type: conference
   title: Approximate Random Dropout for DNN training acceleration in GPGPU
-  authors: Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
-  conference: '*2019 Design, Automation & Test in Europe Conference & Exhibition (DATE)*'
+  authors: >
+    Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
+  conference: >
+    *2019 Design, Automation & Test in Europe Conference & Exhibition (DATE)*
   year: 2018
   # pages: 405-414
   # pdf: http://google.com
