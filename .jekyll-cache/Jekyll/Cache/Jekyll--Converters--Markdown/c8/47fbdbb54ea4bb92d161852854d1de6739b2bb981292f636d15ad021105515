@@ -1,2 +1,0 @@
-I"�<p>We built a closed-loop system that aims to mitigate the user’s cognitive+visual workload level when performing daily tasks, such as paper reading and arithmetic problem solving.  We measure the user’s workload by EEG signal collected from Muse (a commercial EEG headset). Workload levels are defined by N-back tasks and we use a deep learning model for classification.  We designed different mitigation strategies for different tasks…</p>
-:ET

@@ -1,19 +1,19 @@
 -
-  name: Adaptive workload-management system based on portable EEG headset (Ongoing)
+  name: Adaptive workload-management system using a portable EEG headset (Ongoing)
   location: UCSD
   advisor: Prof. Xinyu Zhang
   description: >
-    We built a closed-loop system that aims to mitigate the user's cognitive+visual workload level when performing daily tasks, such as paper reading and arithmetic problem solving. 
-    We measure the user's workload by EEG signal collected from Muse (a commercial EEG headset). Workload levels are defined by N-back tasks and we use a deep learning model for classification. 
-    We designed different mitigation strategies for different tasks...
+    We built a closed-loop system that aims to mitigate the user's cognitive workload level when performing daily tasks. 
+    We measure the user's workload with EEG signal collected from Muse (a commercial EEG headset). Our workload classification model is trained with N-back tasks, and classification accuracy is 0.98. 
+    With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved.
   image: /img/eeg.jpg
 - 
   name: Gazescape (Ongoing)
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >
-    Eye contact plays an important role in a successful and effective group discussion. However, as all classes are moved online during the pandemic, students use video conferencing tools, such as Zoom, for remote discussion, 
-    which lacks this important visual cue for communication. We propose Gazescape, a social translucent video communication system that enables eye-contact within the group to facilitate communication efficiency and students' engagement. 
+    Eye contact plays an important role in a successful and effective group discussion. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
+    which lacks this important visual cue for communication. We propose Gazescape, a video communication system that enables eye-contact within the group to facilitate turn-taking process and communication efficiency. 
   image: /img/gazescape.jpg
 -
   name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
