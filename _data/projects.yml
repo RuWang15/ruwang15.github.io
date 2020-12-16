@@ -5,7 +5,7 @@
   description: >
     We built a closed-loop system that aims to mitigate the user's cognitive workload level when performing daily tasks. 
     We measure the user's workload with EEG signal collected from Muse (a commercial EEG headset). Our workload classification model is trained with N-back tasks, and classification accuracy is 0.98. 
-    With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved by 16% (in terms of reaction time).
+    With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved by 15% (in terms of reaction time).
   image: /img/eeg.jpg
 - 
   name: Gazescape (Ongoing)

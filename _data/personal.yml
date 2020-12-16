@@ -23,6 +23,11 @@ profiles:
   #   network: Google Scholar
   #   username:
   #   url: http://scholar.google.com/citations?user=JS7sVyQAAAAJ&hl=en
+  -
+    network: >
+      **[CV]**
+    username:
+    url: /pdfs/RW_CV_12132020.pdf
   # -
   #   network: LinkedIn
   #   username:
@@ -36,9 +41,9 @@ profiles:
 intro:
   title: Hello!
   body: >
-    I'm a ~~first~~ second year Master student in CS at UC San Diego.
-    My interests lie in **HCI** and **ubiquitous computing**. Specifically, I want to design and build novel interactive systems to assist people with their daily tasks, and enable effective collaborations. I'm also interested in democratizing mental health care. <br><br>
-    I will be applying to fall 2021 PhD programs this year. Please click [***here***](/pdfs/RW_CV_11012020.pdf) to view my CV.
+    I'm a ~~first~~ second year Master student in CS at UC San Diego. I'm currently working with Prof. [Nadir Weibel](https://www.ubicomp.ucsd.edu/weibel) and Prof. [Xinyu Zhang](http://xyzhang.ucsd.edu/). 
+    Prior to UCSD, I received my B.S. at Shanghai Jiao Tong University. I also worked with Prof. [Cheng Zhang](http://www.czhang.org/) at Cornell in 2018.<br> <br>
+    My research interests lie in **HCI** and **Ubiquitous Computing**. Specifically, I want to design and build interactive systems to improve people's productivity and mental well-being through novel sensing techniques and feedback design.<br><br>
   #I will be applying for PhD/master's programs on HCI, 2019 Fall. Please click *here*.
   #[*here*](/pdfs/ruwang_cv_20181122.pdf) to see my CV.
   #I also want to explore mental health intervention in my future research.
