@@ -1,4 +1,20 @@
 -
+  name: Real-time congnitive feedback for online instruction (Ongoing)
+  location: UCSD
+  advisor: Prof. Xinyu Zhang
+  description: > 
+    We propose an online instruction platform that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction.
+    To facilitate peer learning, it will also provide students with proper awareness of peer’s cognitive state such as "45% of your classmates are confused about XXX", etc.
+  image: /img/fol.jpg
+- 
+  name: Gazescape (Ongoing)
+  location: UCSD
+  advisor: Prof. Nadir Weibel
+  description: >
+    Eye gaze plays an important role in successful and effective turn-takings in group discussions. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
+    which lacks this important visual cue for communication. We propose Gazescape, a video communication system that enables gaze sharing within the group to facilitate turn-taking process and communication efficiency. 
+  image: /img/gazescape.jpg
+-
   name: Adaptive workload-management system using a portable EEG headset (Ongoing)
   location: UCSD
   advisor: Prof. Xinyu Zhang
@@ -7,14 +23,6 @@
     We measure the user's workload with EEG signal collected from Muse (a commercial EEG headset). Our workload classification model is trained with N-back tasks, and classification accuracy is 0.98. 
     With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved by 15% (in terms of reaction time).
   image: /img/eeg.jpg
-- 
-  name: Gazescape (Ongoing)
-  location: UCSD
-  advisor: Prof. Nadir Weibel
-  description: >
-    Eye gaze plays an important role in a successful and effective group discussion. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
-    which lacks this important visual cue for communication. We propose Gazescape, a video communication system that enables gaze sharing within the group to facilitate turn-taking process and communication efficiency. 
-  image: /img/gazescape.jpg
 -
   name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
   location: UCSD
