@@ -1,21 +1,22 @@
 -
-  name: Real-time congnitive feedback for online instruction (Ongoing)
+  name: >
+    CogTeach: Real-time congnitive feedback for online instruction (Ongoing)
   location: UCSD
   advisor: Prof. Xinyu Zhang
   description: > 
-    We propose an online instruction platform that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction.
-    To facilitate peer learning, it will also provide students with proper awareness of peer’s cognitive state such as "45% of your classmates are confused about XXX", etc.
+    We propose an online instruction platform CogTeach that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). 
+    The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
   image: /img/fol.jpg
 - 
-  name: Gazescape (Ongoing)
+  name: GazeScape (Ongoing)
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >
     Eye gaze plays an important role in successful and effective turn-takings in group discussions. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
-    which lacks this important visual cue for communication. We propose Gazescape, a video communication system that enables gaze sharing within the group to facilitate turn-taking process and communication efficiency. 
+    which lacks this important visual cue for communication. We propose GazeScape, a video communication system that enables gaze sharing within the group to facilitate turn-taking efficiency and communication quality. 
   image: /img/gazescape.jpg
 -
-  name: Adaptive workload-management system using a portable EEG headset (Ongoing)
+  name: Adaptive system for cognitive workload management using a portable EEG headset (2020)
   location: UCSD
   advisor: Prof. Xinyu Zhang
   description: >
@@ -24,7 +25,7 @@
     With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved by 15% (in terms of reaction time).
   image: /img/eeg.jpg
 -
-  name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
+  name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery) (2020)
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >
@@ -32,17 +33,17 @@
     Through an observational study with two expert surgeons and five novice surgeons operating on cadavers, we find that ARTEMIS supports remote surgical mentoring of novices through synchronous point, draw, and look affordances and asynchronous video clips.
   image: /img/artemis.png
 -
-  name: GrandpARents
+  name: GrandpARents (2019)
   location: UCSD
   advisor: Prof. Nadir Weibel (course project for CSE218 Fall 2019)
   description: >
-    GrandpARents is a system deployed on HoloLens that helps elderly people with visual and/or hearing impairments to cope with their daily tasks.
-    There are two main features in our system. The first one is real-time subtitle for one-on-one conversations. The subtitle will be automatically generated in front of the user when someone is talking;
-    the second feature is Zoom, which allows the user to magnify an area of interest by simply taking a picture and resize it with gestures.
+    GrandpARents is a system deployed on HoloLens that helps older adults with visual impairment and/or hearing loss to cope with their daily tasks.
+    There are two main features in our system. The first one is real-time subtitle for one-on-one conversations. The subtitle will be automatically generated in front of the user when someone is speaking;
+    the second feature is Zoom, which allows the user to magnify an area of interest by simply taking a picture and resize it with hand gestures.
   image: /img/gp.jpg
   # url: https://github.com/WeibelLab-Teaching/CSE218_Fa19_ARengers
 -
-  name: ThumbTrak
+  name: ThumbTrak (2018 - 2019)
   location: Cornell University
   advisor: Prof. Cheng Zhang
   description: >
@@ -52,21 +53,21 @@
   image: /img/proj1.jpg
   url: /pdfs/Intro_ThumbTrak.pdf
 -
-  name: On-Shelf Product Image Generation for Product Classification using GAN
+  name: On-Shelf Product Image Generation for Product Classification using GAN (2019)
   location: Shanghai Jiao Tong University & Clobotics Co.,Ltd
   advisor: Dr. Cong Yang, Prof. Weiyao Lin
   description: >
     We collected 50k+ real product (beverage) images with a self-built turntable, and cameras from 5 different angles.
-    Then we use the images from our dataset and real on-shelf product images from our database to train a Cycle-GAN model.
+    We used the images collected with our device and real on-shelf product images from our database to train a Cycle-GAN model.
     The model can generate 'fake' on-shelf product images which can be further used to train our product classification models, aiming at reducing the cost of manual data annotation.
   image: /img/gan_stage_res.png
 -
-  name: Approximate Random Dropout for DNN training acceleration in GPGPU
+  name: Approximate Random Dropout for DNN training acceleration in GPGPU (2017 - 2018)
   location: Shanghai Jiao Tong University
   advisor: Prof. Li Jiang
   description: >
     The training phases of DNN consumes enormous processing time and energy, and conventional compression techniques can hardly be used in the training phase.
-    We propose the Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
+    We propose Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
   image: /img/proj2.png
   # url: https://ieeexplore.ieee.org/abstract/document/8715135
 # -

@@ -275,8 +275,9 @@ It is threatened by habitat loss.
   {% if site.data.designs.size > 0 %}
   <!-- ==================== -->
   <!-- DESIGNS -->
+  <!-- style="display: none;" -->
   <!-- ==================== -->
-  <section class="container" style="display: none;">
+  <section class="container" >
     <div class="row">
       <div class="col-md-9">
         <h3>Design Projects</h3>
@@ -296,9 +297,10 @@ It is threatened by habitat loss.
                     col-md-3
                     col-lg-2" style="width:33%">
           <p>
-              <img src="{{ site.baseurl }}{{ design.image1 }}"
-                   class="img-responsive img-thumbnail"
-                   style="width:100%;padding:0;border:0">
+            {% if design.image1 %}
+              <img src="{{ site.baseurl }}{{ design.image1 }}" class="img-responsive img-thumbnail"
+                style="width:100%;padding:0;border:0">
+            {% endif %}
           </p>
         </div>
         <div id="img2" class="col-xs-4
@@ -306,9 +308,10 @@ It is threatened by habitat loss.
                     col-md-3
                     col-lg-2" style="width:33%">
           <p>
-              <img src="{{ site.baseurl }}{{ design.image2 }}"
-                   class="img-responsive img-thumbnail"
-                   style="width:100%;padding:0;border:0">
+            {% if design.image2 %}
+              <img src="{{ site.baseurl }}{{ design.image2 }}" class="img-responsive img-thumbnail"
+                style="width:100%;padding:0;border:0">
+            {% endif %}
           </p>
         </div>
         <div id="img3" class="col-xs-4
@@ -316,9 +319,10 @@ It is threatened by habitat loss.
                     col-md-3
                     col-lg-2" style="width:33%">
           <p>
-              <img src="{{ site.baseurl }}{{ design.image3 }}"
-                   class="img-responsive img-thumbnail"
-                   style="width:100%;padding:0;border:0">
+            {% if design.image3 %}
+              <img src="{{ site.baseurl }}{{ design.image3 }}" class="img-responsive img-thumbnail"
+                style="width:100%;padding:0;border:0">
+            {% endif %}
           </p>
         </div>
         <div class="col-xs-12
