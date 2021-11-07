@@ -1,18 +1,20 @@
 name: Ru Wang / 王儒
 
-label: MSCS student at UCSD
+label: PhD student at UW-Madison
 
 picture: /img/new_logo.png
 # selfie: /img/new_logo.png
 selfie: /img/profile.jpg
 
-email: ruw001@eng.ucsd.edu
+email: ru.wang@wisc.edu
+
+#ruw001@eng.ucsd.edu
 
 # phone: +86 13167096320
 
-department: Computer Science and Engineering
+department: Computer Sciences
 
-institution: UC San Diego
+institution: University of Wisconsin-Madison
 
 # mailing_address: >
 #   1600 Amphitheatre Parkway
@@ -25,9 +27,9 @@ profiles:
   #   url: http://scholar.google.com/citations?user=JS7sVyQAAAAJ&hl=en
   -
     network: >
-      **[CV]** (12/13/2020)
+      **[CV]** (11/6/2021)
     username:
-    url: /pdfs/RW_CV_12132020.pdf
+    url: /pdfs/RW_CV_11062021.pdf
   # -
   #   network: LinkedIn
   #   username:
@@ -41,9 +43,14 @@ profiles:
 intro:
   title: Hello!
   body: >
-    I'm a ~~first~~ second year MSCS student at UC San Diego. I'm currently working with Prof. [Nadir Weibel](https://www.ubicomp.ucsd.edu/weibel) and Prof. [Xinyu Zhang](http://xyzhang.ucsd.edu/). 
-    Prior to UCSD, I received my B.S. from Shanghai Jiao Tong University. <br> <br>
-    My research interests lie in **HCI** and **Ubiquitous Computing**. Specifically, I want to design and build intelligent interactive systems to improve people's productivity and mental well-being. <br><br>
+    I'm a first year PhD student at UW-Madison. I'm currently working with Prof. [Yuhang Zhao](https://www.yuhangz.com). 
+    My current research interests lie at the intersection of Human-Computer Interaction, accessibility, and AR/VR technology. 
+    I'm also interested in designing interactive systems that improves people's mental wellbeing. <br> <br>
+    
+    Before Madison, I received my MS from UCSD where I worked with Prof. [Nadir Weibel](https://www.ubicomp.ucsd.edu/weibel) and Prof. [Xinyu Zhang](http://xyzhang.ucsd.edu/). 
+    Prior to UCSD, I received my BS from Shanghai Jiao Tong University. 
+    
+
   #I will be applying for PhD/master's programs on HCI, 2019 Fall. Please click *here*.
   #[*here*](/pdfs/ruwang_cv_20181122.pdf) to see my CV.
   #I also want to explore mental health intervention in my future research.
