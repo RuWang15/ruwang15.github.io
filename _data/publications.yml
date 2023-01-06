@@ -1,12 +1,12 @@
--
-  type: conference
-  title: >
-    Gazescape: Improving Turn-taking Experience in Video Meetings by Enabling Gaze Sharing
-  authors: >
-    **Ru Wang**, Danilo Gasques, Matin Yarmand, Nadir Weibel
-  conference: > 
-    In preparation 
-  year: 2020
+# -
+#   type: conference
+#   title: >
+#     Gazescape: Improving Turn-taking Experience in Video Meetings by Enabling Gaze Sharing
+#   authors: >
+#     **Ru Wang**, Danilo Gasques, Matin Yarmand, Nadir Weibel
+#   conference: > 
+#     In preparation 
+#   year: 2020
 -
   type: conference
   title: >
@@ -14,7 +14,7 @@
   authors: Danilo Gasques, Janet Johnson, Tommy Sharkey, Yuanyuan Feng, **Ru Wang**, Zhuoqun Robin Xu, Enrique Zavala, Yifei Zhang, Wanze Xie, Xinming Zhang, Konrad Davis, Michael Yip, Nadir Weibel
   conference: >
     *Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21)*
-  year: 2020
+  year: 2021
   # pages: 405-414
   # pdf: http://google.com
   # pdf: /pdfs/ard_date2019.pdf
@@ -26,8 +26,5 @@
     Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
   conference: >
     *2019 Design, Automation & Test in Europe Conference & Exhibition (DATE 2019)*
-  year: 2018
-  # pages: 405-414
-  # pdf: http://google.com
-  # pdf: /pdfs/ard_date2019.pdf
+  year: 2019
   url: https://ieeexplore.ieee.org/abstract/document/8715135

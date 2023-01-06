@@ -1,6 +1,24 @@
 -
   name: >
-    CogTeach: Real-time congnitive feedback for online instruction (Ongoing)
+    Gaze‐Aware AR Systems to Empower People with Low Vision (On-going)
+  location: UW-Madison
+  advisor: Prof. Yuhang Zhao
+  description: > 
+    We evaluate the feasibility of using current off-the-shelf eye trackers for low vision users and identify low vision people's unique gaze patterns when reading using eye-tracking. 
+    We distill their challenges and needs in reading, thus develop gaze-aware visual augmentation that enhance their reading experience.
+  image: /img/low_vision_gaze.jpg
+-
+  name: >
+    AR Systems to Facilitate Safe Cooking for People with Visual Impairment
+  location: UW-Madison
+  advisor: Prof. Yuhang Zhao
+  description: > 
+    We conduct contexual inquery study to observe how people with visual impairments (PVI) cook in their own kitchens. We also interview rehabilitation professionals about kitchen related training. 
+    Combining the two studies, we seek to understand PVI's unique challenges and needs in the kitchen and identify design considerations for future assistive technology. 
+  image: /img/low_vision_cook.jpg
+-
+  name: >
+    CogTeach: Real-Time Congnitive Feedback for Online Instruction
   location: UCSD
   advisor: Prof. Xinyu Zhang
   description: > 
@@ -8,7 +26,7 @@
     The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
   image: /img/fol.jpg
 - 
-  name: GazeScape (Ongoing)
+  name: GazeScape
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >
@@ -32,16 +50,16 @@
     ARTEMIS is a collaborative system for surgical telementoring. The surgical ﬁeld is recreated for a remote expert in VR, and the remote expert annotations and avatar are displayed into the novice’s ﬁeld of view in real-time using AR. 
     Through an observational study with two expert surgeons and five novice surgeons operating on cadavers, we find that ARTEMIS supports remote surgical mentoring of novices through synchronous point, draw, and look affordances and asynchronous video clips.
   image: /img/artemis.png
--
-  name: GrandpARents (2019)
-  location: UCSD
-  advisor: Prof. Nadir Weibel (course project for CSE218 Fall 2019)
-  description: >
-    GrandpARents is a system deployed on HoloLens that helps older adults with visual impairment and/or hearing loss to cope with their daily tasks.
-    There are two main features in our system. The first one is real-time subtitle for one-on-one conversations. The subtitle will be automatically generated in front of the user when someone is speaking;
-    the second feature is Zoom, which allows the user to magnify an area of interest by simply taking a picture and resize it with hand gestures.
-  image: /img/gp.jpg
-  # url: https://github.com/WeibelLab-Teaching/CSE218_Fa19_ARengers
+# -
+#   name: GrandpARents (2019)
+#   location: UCSD
+#   advisor: Prof. Nadir Weibel (course project for CSE218 Fall 2019)
+#   description: >
+#     GrandpARents is a system deployed on HoloLens that helps older adults with visual impairment and/or hearing loss to cope with their daily tasks.
+#     There are two main features in our system. The first one is real-time subtitle for one-on-one conversations. The subtitle will be automatically generated in front of the user when someone is speaking;
+#     the second feature is Zoom, which allows the user to magnify an area of interest by simply taking a picture and resize it with hand gestures.
+#   image: /img/gp.jpg
+#   # url: https://github.com/WeibelLab-Teaching/CSE218_Fa19_ARengers
 # -
 #   name: ThumbTrak (2018 - 2019)
 #   location: Cornell University
@@ -61,15 +79,15 @@
 #     We used the images collected with our device and real on-shelf product images from our database to train a Cycle-GAN model.
 #     The model can generate 'fake' on-shelf product images which can be further used to train our product classification models, aiming at reducing the cost of manual data annotation.
 #   image: /img/gan_stage_res.png
--
-  name: Approximate Random Dropout for DNN training acceleration in GPGPU (2017 - 2018)
-  location: Shanghai Jiao Tong University
-  advisor: Prof. Li Jiang
-  description: >
-    The training phases of DNN consumes enormous processing time and energy, and conventional compression techniques can hardly be used in the training phase.
-    We propose Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
-  image: /img/proj2.png
-  # url: https://ieeexplore.ieee.org/abstract/document/8715135
+# -
+#   name: Approximate Random Dropout for DNN training acceleration in GPGPU (2017 - 2018)
+#   location: Shanghai Jiao Tong University
+#   advisor: Prof. Li Jiang
+#   description: >
+#     The training phases of DNN consumes enormous processing time and energy, and conventional compression techniques can hardly be used in the training phase.
+#     We propose Approximate Random Dropout to eliminate the unnecessary computation and data access. To compensate the performance loss we develop a SGD-based Search Algorithm to produce the distribution of dropout patterns.
+#   image: /img/proj2.png
+#   # url: https://ieeexplore.ieee.org/abstract/document/8715135
 # -
 #   name: Virtual Dressing System
 #   location: Shanghai Jiao Tong University

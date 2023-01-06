@@ -2,12 +2,12 @@
   description: >
     Winner of CHI 2021 Student Volunteer (SV) happi design contest!
   image1: /img/des3_1.jpg
--
-  description: >
-    UI design of a personal website. Course project for *Creative Design for Graphic, summer 2016*.
-  image1: /img/des1_1.jpg
-  image2: /img/des1_2.jpg
-  image3: /img/des1_3.png
+# -
+#   description: >
+#     UI design of a personal website. Course project for *Creative Design for Graphic, summer 2016*.
+#   image1: /img/des1_1.jpg
+#   image2: /img/des1_2.jpg
+#   image3: /img/des1_3.png
 # -
 #   description: >
 #     Fitnessquat, a squat toilet that encourages healthy lifestyle. Course project for *The Art of Design Innovation, summer 2017*.
