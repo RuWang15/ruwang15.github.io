@@ -25,14 +25,14 @@
     We propose an online instruction platform CogTeach that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). 
     The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
   image: /img/fol.jpg
-- 
-  name: GazeScape
-  location: UCSD
-  advisor: Prof. Nadir Weibel
-  description: >
-    Eye gaze plays an important role in successful and effective turn-takings in group discussions. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
-    which lacks this important visual cue for communication. We propose GazeScape, a video communication system that enables gaze sharing within the group to facilitate turn-taking efficiency and communication quality. 
-  image: /img/gazescape.jpg
+# - 
+#   name: GazeScape
+#   location: UCSD
+#   advisor: Prof. Nadir Weibel
+#   description: >
+#     Eye gaze plays an important role in successful and effective turn-takings in group discussions. However, as all classes are moved online during the pandemic, students use video conferencing softwares, such as Zoom, for remote discussion, 
+#     which lacks this important visual cue for communication. We propose GazeScape, a video communication system that enables gaze sharing within the group to facilitate turn-taking efficiency and communication quality. 
+#   image: /img/gazescape.jpg
 # -
 #   name: Adaptive system for cognitive workload management using a portable EEG headset (2020)
 #   location: UCSD

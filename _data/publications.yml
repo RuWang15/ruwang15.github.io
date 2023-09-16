@@ -10,15 +10,20 @@
 -
   type: conference
   title: >
+    Practices and Barriers of Cooking Training for Blind and Low Vision People (Poster)
+  authors: '**Ru Wang**, Nihan Zhou, Tam Nguyen, Sanbrita Mondal, Bilge Mutlu, Yuhang Zhao'
+  conference: >
+    *The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’23)*
+  year: 2023
+-
+  type: conference
+  title: >
     Understanding How Low Vision People Read using Eye Tracking
   authors: '**Ru Wang**, Linda Zeng, Xinyong Zhang, Sanbrita Mondal, Yuhang Zhao'
   conference: >
-    *Accepted to CHI '23*
+    *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*
   year: 2023
-  # pages: 405-414
-  # pdf: http://google.com
-  # pdf: /pdfs/ard_date2019.pdf
-  # url: https://dl.acm.org/doi/10.1145/3411764.3445576
+  url: https://dl.acm.org/doi/10.1145/3544548.3581213
 -
   type: conference
   title: >

@@ -22,6 +22,6 @@
 #   description: >
 #     The image below is the result of our model. The result shows that our model changes the shadow, lighting, and the background of the input image to make it more resemble an on-shelf image. The generated 'fake' images (fake B) boosted our product classification model's recall by 0.1.
 #   html: <img src="/img/gan_result.png" class="img-responsive img-thumbnail" style="width:75%">
--
-  description: >
-    Please see our paper for more details.
+# -
+#   description: >
+#     Please see our paper for more details.
