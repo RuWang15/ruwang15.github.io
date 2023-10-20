@@ -9,16 +9,16 @@
 #   year: 2020
 -
   type: conference
-  title: >
-    Practices and Barriers of Cooking Training for Blind and Low Vision People (Poster)
+  title: > 
+    **Practices and Barriers of Cooking Training for Blind and Low Vision People (Poster)**
   authors: '**Ru Wang**, Nihan Zhou, Tam Nguyen, Sanbrita Mondal, Bilge Mutlu, Yuhang Zhao'
   conference: >
-    *The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’23)*
+    *The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)*
   year: 2023
 -
   type: conference
-  title: >
-    Understanding How Low Vision People Read using Eye Tracking
+  title: > 
+    **Understanding How Low Vision People Read using Eye Tracking**
   authors: '**Ru Wang**, Linda Zeng, Xinyong Zhang, Sanbrita Mondal, Yuhang Zhao'
   conference: >
     *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*
@@ -26,8 +26,8 @@
   url: https://dl.acm.org/doi/10.1145/3544548.3581213
 -
   type: conference
-  title: >
-    ARTEMIS: A Collaborative Mixed-Reality Environment for Immersive Surgical Telementoring
+  title: > 
+    **ARTEMIS: A Collaborative Mixed-Reality Environment for Immersive Surgical Telementoring**
   authors: Danilo Gasques, Janet Johnson, Tommy Sharkey, Yuanyuan Feng, **Ru Wang**, Zhuoqun Robin Xu, Enrique Zavala, Yifei Zhang, Wanze Xie, Xinming Zhang, Konrad Davis, Michael Yip, Nadir Weibel
   conference: >
     *Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21)*
@@ -38,7 +38,8 @@
   url: https://dl.acm.org/doi/10.1145/3411764.3445576
 -
   type: conference
-  title: Approximate Random Dropout for DNN training acceleration in GPGPU
+  title: >
+    **Approximate Random Dropout for DNN training acceleration in GPGPU**
   authors: >
     Zhuoran Song, **Ru Wang**, Dongyu Ru, Zhenghao Peng, Hongru Huang, Hai Zhao, Xiaoyao Liang, Li Jiang
   conference: >

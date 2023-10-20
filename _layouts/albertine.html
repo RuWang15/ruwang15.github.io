@@ -154,49 +154,48 @@ It is threatened by habitat loss.
   {% if site.data.publications.size > 0 %}
   <div class="container">
     <div class="row">
-      <section class="col-md-9">
+      <section class="col-md-12">
         <h3>Publications</h3>
 
         {% for publication in site.data.publications %}
-          <p>
-            <b>
+            <!-- <b> -->
               {% if publication.url %}
               <a href="{{ publication.url }}" target="_blank" >
-                {{ publication.title }}
+                {{ publication.title | markdownify }}
               </a>
               {% else %}
-                {{ publication.title }}
+                {{ publication.title | markdownify }}
               {% endif %}
-            </b>
-            {% if publication.pdf %}
+            <!-- </b> -->
+          
+            <!-- {% if publication.pdf %}
               <a href="{{ publication.pdf }}">
                 [PDF]
               </a>
             {% endif %}
             <small>
               {{ publication.year }}
-            </small>
-            <br>
-            {{ publication.authors | markdownify }}
+            </small> -->
+
             <!-- <br> -->
-            {% case publication.type %}
-              {% when 'conference' %}
-                {{ publication.conference | markdownify }}
-              {% when 'dissertation' %}
-                {{ publication.publisher }}
-              {% when 'journal' %}
-                {{ publication.journal }},
-                {{ publication.volume }},
-                {{ publication.issue }},
-                {{ publication.pages }}
-              {% when 'magazine' %}
-                {{ publication.magazine }},
-                {{ publication.volume }},
-                {{ publication.issue }},
-                {{ publication.pages }}
-            {% endcase %}
-            <br><br>
-          </p>
+          {{ publication.authors | markdownify }}
+          {% case publication.type %}
+            {% when 'conference' %}
+              {{ publication.conference | markdownify }}
+            {% when 'dissertation' %}
+              {{ publication.publisher }}
+            {% when 'journal' %}
+              {{ publication.journal }},
+              {{ publication.volume }},
+              {{ publication.issue }},
+              {{ publication.pages }}
+            {% when 'magazine' %}
+              {{ publication.magazine }},
+              {{ publication.volume }},
+              {{ publication.issue }},
+              {{ publication.pages }}
+          {% endcase %}
+          <br>
         {% endfor %}
       </section>
     </div>
@@ -207,136 +206,134 @@ It is threatened by habitat loss.
   <!-- ==================== -->
   <!-- PROJECTS -->
   <!-- ==================== -->
-  <section class="container">
+  <div class="container">
     <div class="row">
-      <div class="col-md-9">
+      <section class="col-md-12">
         <h3>Projects</h3>
-      </div>
-    </div>
-
-    {% assign counter = 0 %}
-    {% for project in site.data.projects %}
-      {% if counter < site.data.details.size %}
-        <div id="Project{{ counter }}" class="modal">
-          <p> {{ site.data.details[counter].description | markdownify }} </p>
-          {{ site.data.details[counter].html }}
-          <p><a href="#" rel="modal:close">Close</a></p>
-        </div>
-      {% else %}
-        <div id="Project{{ counter }}" class="modal">
-          <p>Comming Soon...<a href="#" rel="modal:close"><br>Close</a></p>
-        </div>
-      {% endif %}
-      <div class="row" style="margin-bottom:20px;margin-top:10px">
-        <div class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-2" style="width:25%">
-          <p>
-            <a href="#Project{{ counter }}" rel="modal:open">
-              <img src="{{ site.baseurl }}{{ project.image }}"
-                   class="img-responsive img-thumbnail"
-                   style="width:100%">
-            </a>
-          </p>
-        </div>
-        <div class="col-xs-12
-                    col-sm-9
-                    col-md-6
-                    col-lg-7">
-          <p>
-            <b>
-              {% if project.url %}
-                <a href="{{ project.url }}">
-                  {{ project.name }}
-                </a>
-              {% else %}
+        
+        {% assign counter = 0 %}
+        {% for project in site.data.projects %}
+          {% if counter < site.data.details.size %}
+            <div id="Project{{ counter }}" class="modal">
+              {{ site.data.details[counter].description | markdownify }}
+              {{ site.data.details[counter].html }}
+              <p><a href="#" rel="modal:close">Close</a></p>
+            </div>
+          {% else %}
+            <div id="Project{{ counter }}" class="modal">
+              <p>Comming Soon...<a href="#" rel="modal:close"><br>Close</a></p>
+            </div>
+          {% endif %}
+          <div class="row" style="margin-bottom:5%;">
+            <div class="col-xs-4
+                        col-sm-3
+                        col-md-3
+                        col-lg-2" style="width:35%">
                 <a href="#Project{{ counter }}" rel="modal:open">
-                  {{ project.name }}
+                  <img src="{{ site.baseurl }}{{ project.image }}"
+                      class="img-responsive img-thumbnail"
+                      style="width:100%">
                 </a>
-              {% endif %}
-            </b>
-          </p>
-          <p>
-            Advised by {{ project.advisor }},&nbsp;
-              {% if project.location %}
-                {{ project.location }}
-              {% endif %}
-          </p>
+            </div>
+            <div class="col-xs-12
+                        col-sm-9
+                        col-md-6
+                        col-lg-7">
+              <p>
+                <b>
+                  {% if project.url %}
+                    <a href="{{ project.url }}">
+                      {{ project.name }}
+                    </a>
+                  {% else %}
+                    <a href="#Project{{ counter }}" rel="modal:open">
+                      {{ project.name }}
+                    </a>
+                  {% endif %}
+                </b>
+              </p>
+              <p>
+                Advised by {{ project.advisor }},&nbsp;
+                  {% if project.location %}
+                    {{ project.location }}
+                  {% endif %}
+              </p>
 
-          {{ project.description | markdownify }}
-        </div>
-      </div>
-      {% assign counter = counter | plus:1 %}
-    {% endfor %}
-  </section>
+              {{ project.description | markdownify }}
+            </div>
+          </div>
+          {% assign counter = counter | plus:1 %}
+        {% endfor %}
+      </section>
+    </div>
+  </div>
   {% endif %}
 
   {% if site.data.designs.size > 0 %}
   <!-- ==================== -->
   <!-- DESIGNS -->
-  <!-- style="display: none;" -->
   <!-- ==================== -->
-  <section class="container" >
+  <div class="container" >
     <div class="row">
-      <div class="col-md-9">
+      <section class="col-md-12">
         <h3>Misc.</h3>
-      </div>
+     
+            <!-- <div class="col-xs-12
+                        col-sm-9
+                        col-md-6
+                        col-lg-7" style="width:100%">
+        <h4><b>Please click <a href="/pdfs/RuWang_portfolio.pdf" style="color:#7085B6"> here </a> to view my design portfolio.</b><br><br><h4>
+            </div> -->
+        {% assign counter = 0 %}
+        {% for design in site.data.designs %}
+          <div class="row" style="margin-bottom:20px;margin-top:10px">
+            <div id="img1" class="col-xs-4
+                        col-sm-3
+                        col-md-3
+                        col-lg-2" style="width:33%">
+              <p>
+                {% if design.image1 %}
+                  <img src="{{ site.baseurl }}{{ design.image1 }}" class="img-responsive img-thumbnail"
+                    style="width:100%;padding:0;border:0">
+                {% endif %}
+              </p>
+            </div>
+            <div id="img2" class="col-xs-4
+                        col-sm-3
+                        col-md-3
+                        col-lg-2" style="width:33%">
+              <p>
+                {% if design.image2 %}
+                  <img src="{{ site.baseurl }}{{ design.image2 }}" class="img-responsive img-thumbnail"
+                    style="width:100%;padding:0;border:0">
+                {% endif %}
+              </p>
+            </div>
+            <div id="img3" class="col-xs-4
+                        col-sm-3
+                        col-md-3
+                        col-lg-2" style="width:33%">
+              <p>
+                {% if design.image3 %}
+                  <img src="{{ site.baseurl }}{{ design.image3 }}" class="img-responsive img-thumbnail"
+                    style="width:100%;padding:0;border:0">
+                {% endif %}
+              </p>
+            </div>
+            <div class="col-xs-12
+                        col-sm-9
+                        col-md-6
+                        col-lg-7" style="width:100%">
+
+              {{ design.description | markdownify }}
+
+            </div>
+          </div>
+          {% assign counter = counter | plus:1 %}
+        {% endfor %}
+      </section>
     </div>
-    <!-- <div class="col-xs-12
-                col-sm-9
-                col-md-6
-                col-lg-7" style="width:100%">
-<h4><b>Please click <a href="/pdfs/RuWang_portfolio.pdf" style="color:#7085B6"> here </a> to view my design portfolio.</b><br><br><h4>
-    </div> -->
-    {% assign counter = 0 %}
-    {% for design in site.data.designs %}
-      <div class="row" style="margin-bottom:20px;margin-top:10px">
-        <div id="img1" class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-2" style="width:33%">
-          <p>
-            {% if design.image1 %}
-              <img src="{{ site.baseurl }}{{ design.image1 }}" class="img-responsive img-thumbnail"
-                style="width:100%;padding:0;border:0">
-            {% endif %}
-          </p>
-        </div>
-        <div id="img2" class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-2" style="width:33%">
-          <p>
-            {% if design.image2 %}
-              <img src="{{ site.baseurl }}{{ design.image2 }}" class="img-responsive img-thumbnail"
-                style="width:100%;padding:0;border:0">
-            {% endif %}
-          </p>
-        </div>
-        <div id="img3" class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-2" style="width:33%">
-          <p>
-            {% if design.image3 %}
-              <img src="{{ site.baseurl }}{{ design.image3 }}" class="img-responsive img-thumbnail"
-                style="width:100%;padding:0;border:0">
-            {% endif %}
-          </p>
-        </div>
-        <div class="col-xs-12
-                    col-sm-9
-                    col-md-6
-                    col-lg-7" style="width:100%">
-
-          {{ design.description | markdownify }}
-
-        </div>
-      </div>
-      {% assign counter = counter | plus:1 %}
-    {% endfor %}
-  </section>
+  </div>
   {% endif %}
 
   <!--section class="container">

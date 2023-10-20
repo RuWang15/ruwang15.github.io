@@ -1,12 +1,12 @@
 -
   name: >
-    Gaze‐Aware AR Systems to Empower People with Low Vision (On-going)
+    Gaze‐Aware Visual Augmentations to Enhance Low Vision People's Reading Expereince (On-going)
   location: UW-Madison
   advisor: Prof. Yuhang Zhao
   description: > 
     We evaluate the feasibility of using current off-the-shelf eye trackers for low vision users and identify low vision people's unique gaze patterns when reading using eye-tracking. 
-    We distill their challenges and needs in reading, thus develop gaze-aware visual augmentation that enhance their reading experience.
-  image: /img/low_vision_gaze.jpg
+    Based upon our findings, we further develop gaze-aware visual augmentation that enhance low vision users' reading experience. Our system facilitates line switching/following and difficult word recognition.
+  image: /img/GazePrompt-16-9.gif #/img/low_vision_gaze.jpg
 -
   name: >
     AR Systems to Facilitate Safe Cooking for People with Visual Impairment
@@ -24,7 +24,7 @@
   description: > 
     We propose an online instruction platform CogTeach that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). 
     The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
-  image: /img/fol.jpg
+  image: /img/fol.png
 # - 
 #   name: GazeScape
 #   location: UCSD
@@ -48,7 +48,7 @@
   advisor: Prof. Nadir Weibel
   description: >
     ARTEMIS is a collaborative system for surgical telementoring. The surgical ﬁeld is recreated for a remote expert in VR, and the remote expert annotations and avatar are displayed into the novice’s ﬁeld of view in real-time using AR. 
-    Through an observational study with two expert surgeons and five novice surgeons operating on cadavers, we find that ARTEMIS supports remote surgical mentoring of novices through synchronous point, draw, and look affordances and asynchronous video clips.
+    ARTEMIS supports remote surgical mentoring of novices through synchronous point, draw, and look affordances and asynchronous video clips.
   image: /img/artemis.png
 # -
 #   name: GrandpARents (2019)
