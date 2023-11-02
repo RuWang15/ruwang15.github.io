@@ -1,12 +1,22 @@
 -
   name: >
-    Gaze‐Aware Visual Augmentations to Enhance Low Vision People's Reading Expereince (On-going)
+    Designing AR intervention to support people with OCD
   location: UW-Madison
   advisor: Prof. Yuhang Zhao
   description: > 
-    We evaluate the feasibility of using current off-the-shelf eye trackers for low vision users and identify low vision people's unique gaze patterns when reading using eye-tracking. 
-    Based upon our findings, we further develop gaze-aware visual augmentation that enhance low vision users' reading experience. Our system facilitates line switching/following and difficult word recognition.
+    We seek to understand the core strategies of effective OCD therapies (e.g., ERP and ACT) and design AR real-time intervention to support OCD people's mental health when they are outside of therapy sessions.
+  image: /img/ocd-teaser.png
+
+-
+  name: >
+    Gaze‐Aware Visual Augmentations to Enhance Low Vision People's Reading Experience
+  location: UW-Madison
+  advisor: Prof. Yuhang Zhao
+  description: > 
+    We improve the gaze data collection process to make eye tracking accessible to low vision users, and identify low vision people's unique gaze patterns when reading using eye-tracking. 
+    Based upon our findings, we further design gaze-aware visual augmentations that enhance low vision users' reading experience. Our system facilitates line switching/following and difficult word recognition.
   image: /img/GazePrompt-16-9.gif #/img/low_vision_gaze.jpg
+  video: https://youtu.be/EmA39e5aKig
 -
   name: >
     AR Systems to Facilitate Safe Cooking for People with Visual Impairment
@@ -18,7 +28,7 @@
   image: /img/low_vision_cook.jpg
 -
   name: >
-    CogTeach: Real-Time Congnitive Feedback for Online Instruction
+    CogTeach: Real-Time Cognitive Feedback for Online Instruction
   location: UCSD
   advisor: Prof. Xinyu Zhang
   description: > 
@@ -43,7 +53,7 @@
 #     With our system and a simple mitigation strategy, the user's performance on a series of N-back tasks can be improved by 15% (in terms of reaction time).
 #   image: /img/eeg.jpg
 -
-  name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery) (2020)
+  name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
   location: UCSD
   advisor: Prof. Nadir Weibel
   description: >

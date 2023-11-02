@@ -15,6 +15,7 @@
   conference: >
     *The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)*
   year: 2023
+  url: https://dl.acm.org/doi/10.1145/3597638.3614494
 -
   type: conference
   title: > 
@@ -24,6 +25,15 @@
     *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*
   year: 2023
   url: https://dl.acm.org/doi/10.1145/3544548.3581213
+-
+  type: conference
+  title: > 
+    **Characterizing Barriers and Technology Needs in the Kitchen for Blind and Low Vision People**
+  authors: '**Ru Wang**, Nihan Zhou, Tam Nguyen, Sanbrita Mondal, Bilge Mutlu, Yuhang Zhao'
+  conference: >
+    *arXiv 2023*
+  year: 2023
+  url: https://arxiv.org/abs/2310.05396
 -
   type: conference
   title: > 
