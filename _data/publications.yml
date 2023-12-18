@@ -10,6 +10,14 @@
 -
   type: conference
   title: > 
+    **GazePrompt: Enhancing Low Vision People's Reading Experience with Gaze-Aware Augmentations**
+  authors: '**Ru Wang**, Zach Potter, Yun Ho, Daniel Killough, Linda Zeng, Sanbrita Mondal, Yuhang Zhao'
+  conference: >
+    *CHI '24 (Under Review)*
+  year: 2024
+-
+  type: conference
+  title: > 
     **Practices and Barriers of Cooking Training for Blind and Low Vision People (Poster)**
   authors: '**Ru Wang**, Nihan Zhou, Tam Nguyen, Sanbrita Mondal, Bilge Mutlu, Yuhang Zhao'
   conference: >
@@ -34,6 +42,22 @@
     *arXiv 2023*
   year: 2023
   url: https://arxiv.org/abs/2310.05396
+-
+  type: conference
+  title: > 
+    **Peer Attention Enhances Student Learning**
+  authors: Songlin Xu, Dongyin Hu, **Ru Wang**, Xinyu Zhang
+  conference: >
+    *PNAS (Under Review)*
+  year: 2023
+-
+  type: conference
+  title: > 
+    **"I Expected to Like VR Better": Evaluating Video Conferencing and Desktop Virtual Platforms for Remote Classroom Interactions**
+  authors: Matin Yarmand, **Ru Wang**, Haowei Li, Nadir Weibel
+  conference: >
+    *ISLS 2024 (Under Review)*
+  year: 2023
 -
   type: conference
   title: > 
