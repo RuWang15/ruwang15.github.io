@@ -16,7 +16,7 @@
     We improve the gaze data collection process to make eye tracking accessible to low vision users, and identify low vision people's unique gaze patterns when reading using eye-tracking. 
     Based upon our findings, we further design gaze-aware visual augmentations that enhance low vision users' reading experience. Our system facilitates line switching/following and difficult word recognition.
   image: /img/GazePrompt-16-9.gif #/img/low_vision_gaze.jpg
-  video: https://youtu.be/EmA39e5aKig
+  video: https://youtu.be/Ow8Y4ZEnUhY
 -
   name: >
     AR Systems to Facilitate Safe Cooking for People with Visual Impairment
