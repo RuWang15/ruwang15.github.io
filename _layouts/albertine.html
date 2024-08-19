@@ -104,26 +104,32 @@ It is threatened by habitat loss.
           <!-- {{ site.data.personal.mailing_address | replace:'\n','<br>' }} -->
         </p>
 
-        <p>
+        <div >
           {% for profile in site.data.personal.profiles %}
 
             {% if profile.network == 'Google Scholar' %}
+            <a href="{{ profile.url }}" class="lead" target="_blank">
               <i class="fa fa-google"></i>
+            </a>
             {% elsif profile.network == 'LinkedIn' %}
+            <a href="{{ profile.url }}" class="lead" target="_blank">
               <i class="fa fa-linkedin-square"></i>
+            </a>
             {% elsif profile.network == 'Twitter' %}
+            <a href="{{ profile.url }}" class="lead" target="_blank">
               <i class="fa fa-twitter-square"></i>
+            </a>
             <!-- {% elsif profile.network == 'CV' %}
               <i class="far fa-file"></i> -->
             {% endif %}
-            <a href="{{ profile.url }}" class="lead">
-              {{ profile.network | markdownify }}
-            </a>
+            <!-- <a href="{{ profile.url }}" class="lead">
+              {{ profile.network }}
+            </a> -->
             {% if forloop.last == false %}
               <br>
             {% endif %}
           {% endfor %}
-        </p>
+          </div>
       </section>
 
       <section class="col-md-8" style="margin-left:8.3333%; padding-top:0%">

@@ -20,10 +20,10 @@ institution: University of Wisconsin-Madison
 #   Mountain View, CA 94043
 
 profiles:
-  # -
-  #   network: Google Scholar
-  #   username:
-  #   url: http://scholar.google.com/citations?user=JS7sVyQAAAAJ&hl=en
+  -
+    network: Google Scholar
+    username:
+    url: https://scholar.google.com/citations?user=o0t6JRYAAAAJ&hl=en&authuser=1
   # -
   #   network: >
   #     **[CV]** (11/6/2021)
@@ -33,12 +33,10 @@ profiles:
   #   network: LinkedIn
   #   username:
   #   url: https://www.linkedin.com/pub/ian-li/1/681/8b0
-  # -
-  #   network: Facebook
-  #   username: Ru Wang
-  #   url: https://www.facebook.com/william.ruru.3
-  #   https://drive.google.com/file/d/1D5UtHjQbsYrVxAxjt5Rzx_Od_jLc1iLw/view?usp=sharing
-  #   [here](https://google.com)
+  -
+    network: Twitter
+    username: Ru Wang
+    url: https://twitter.com/ruw001
 intro:
   title: Hello!
   body: >
