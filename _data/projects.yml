@@ -1,12 +1,21 @@
 -
   name: >
-    Designing AR intervention to support people with OCD
+    Understanding User Intent across Visual Abilities and Tasks via Eye Tracking
   location: UW-Madison
   advisor: Prof. Yuhang Zhao
   description: > 
-    We seek to understand the core strategies of effective OCD therapies (e.g., ERP and ACT) and design AR real-time intervention to support OCD people's mental health when they are outside of therapy sessions.
-  image: /img/ocd-teaser.png
-
+    Using eye tracking, we compare the gaze behavior of sighted and low vision people during reading, and uncover low vision users' gaze-level reading challenges under different magnification modes. 
+    We further identify the subtasks in image viewing activities and characterize gaze patterns of users with varying visual abilities during these tasks, enabling user intent recognition across visual abilities.
+  image: /img/gaze_analytic_demo_simple.gif
+-
+  name: >
+    Designing In-Situ AR Intervention to Support OCD Self-Management
+  location: UW-Madison
+  advisor: Prof. Yuhang Zhao
+  description: > 
+    We design AI-driven AR interventions that incorporates core strategies of effective OCD therapies (e.g., ERP and ACT). By rendering restrictive visual augmentations on real world objects involved in compulsive behaviors (e.g., hand washing), 
+    our system can encourage users to disengage from compulsions, and help them start an in-situ exposure practice.
+  image: /img/hand_washing.gif
 -
   name: >
     Gaze‐Aware Visual Augmentations to Enhance Low Vision People's Reading Experience
@@ -19,22 +28,22 @@
   video: https://youtu.be/Ow8Y4ZEnUhY
 -
   name: >
-    AR Systems to Facilitate Safe Cooking for People with Visual Impairment
+    Understanding Cooking Challenges for People with Visual Impairment
   location: UW-Madison
   advisor: Prof. Yuhang Zhao
   description: > 
     We conduct contexual inquery study to observe how people with visual impairments (PVI) cook in their own kitchens. We also interview rehabilitation professionals about kitchen related training. 
     Combining the two studies, we seek to understand PVI's unique challenges and needs in the kitchen and identify design considerations for future assistive technology. 
   image: /img/low_vision_cook.jpg
--
-  name: >
-    CogTeach: Real-Time Cognitive Feedback for Online Instruction
-  location: UCSD
-  advisor: Prof. Xinyu Zhang
-  description: > 
-    We propose an online instruction platform CogTeach that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). 
-    The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
-  image: /img/fol.png
+# -
+#   name: >
+#     CogTeach: Real-Time Cognitive Feedback for Online Instruction
+#   location: UCSD
+#   advisor: Prof. Xinyu Zhang
+#   description: > 
+#     We propose an online instruction platform CogTeach that collects students' eye gaze and facial expression to infer their cognitive state (confusion and engagement). 
+#     The system will then visualize the students' cognitive states and fixations on the instructor's side in real-time to help improve instruction and decision making.
+#   image: /img/fol.png
 # - 
 #   name: GazeScape
 #   location: UCSD

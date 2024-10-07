@@ -2,7 +2,7 @@ name: Ru Wang / 王儒
 
 label: PhD student at UW-Madison
 
-picture: /img/logo.png
+picture: /img/logo_ruru.svg
 selfie: /img/profile.jpg
 
 email: ru.wang@wisc.edu
@@ -11,8 +11,8 @@ email: ru.wang@wisc.edu
 
 # phone: +86 13167096320
 
-department: Computer Sciences
-
+department: Dept. of Computer Sciences
+location: Madison, WI
 institution: University of Wisconsin-Madison
 
 # mailing_address: >
@@ -24,25 +24,25 @@ profiles:
     network: Google Scholar
     username:
     url: https://scholar.google.com/citations?user=o0t6JRYAAAAJ&hl=en&authuser=1
-  # -
-  #   network: >
-  #     **[CV]** (11/6/2021)
-  #   username:
-  #   url: /pdfs/RW_CV_11062021.pdf
-  # -
-  #   network: LinkedIn
-  #   username:
-  #   url: https://www.linkedin.com/pub/ian-li/1/681/8b0
+  -
+    network: LinkedIn
+    username:
+    url: https://www.linkedin.com/in/ruwang15/
   -
     network: Twitter
     username: Ru Wang
     url: https://twitter.com/ruw001
+  -
+    network: CV
+    username:
+    url: /pdfs/RW_CV_2024_clean_1007.pdf
 intro:
-  title: Hello!
+  # title: Hello!
   body: >
-    I'm a 3rd year PhD student at University of Wisconsin-Madison. I'm currently working with Prof. [Yuhang Zhao](https://www.yuhangz.com). 
-    My research interests include **Human-Computer Interaction, Accessibility, Mental Health, and AR/VR Technology**. 
-    I'm interested in designing real-time intention-aware interventions to improve people's productivity and mental well-being. <br> <br>
+    I'm a 4th year CS PhD student at University of Wisconsin-Madison. I'm currently working with Prof. [Yuhang Zhao](https://www.yuhangz.com). 
+    My research interests include **Human-Computer Interaction, Eye Tracking, Extended Reality, Accessibility, and Mental Health**. 
+    I design and build intent-aware interactive systems to (1) enhance accessibility of visual information, and (2) provide personalized in-situ mental health support.
+    <br> <br>
     
     Before Madison, I received my MS from UCSD where I worked with Prof. [Nadir Weibel](https://hxi.ucsd.edu/author/nadir-weibel/) and Prof. [Xinyu Zhang](http://xyzhang.ucsd.edu/). 
     Prior to UCSD, I received my BS from Shanghai Jiao Tong University. 
@@ -50,5 +50,3 @@ intro:
 
   #I will be applying for PhD/master's programs on HCI, 2019 Fall. Please click *here*.
   #[*here*](/pdfs/ruwang_cv_20181122.pdf) to see my CV.
-  #I also want to explore mental health intervention in my future research.
-  #I also worked with Prof. [Cheng Zhang](http://www.czhang.org/) at Cornell in 2018.<br> <br>

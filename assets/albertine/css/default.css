@@ -1,14 +1,17 @@
 body {
-  -webkit-font-smoothing:antialiased;
+  /* -webkit-font-smoothing:antialiased;
      -moz-font-smoothing:antialiased;
           font-smoothing:antialiased;
   -webkit-box-sizing:border-box;
      -moz-box-sizing:border-box;
-          box-sizing:border-box;
+          box-sizing:border-box; */
   font-family:'Roboto', 'Arial', sans-serif;
   font-size:16px;
-  padding-top:176px;
-  background-color:#fff;
+  padding-top:120px;
+  /* background-color:#fff; */
+  background-color: Canvas;
+  color: CanvasText;
+  color-scheme: light dark;
 }
 
 /*******************
@@ -21,7 +24,7 @@ header {
   left:0;
   right:0;
   padding:32px 0;
-  background-color:#fff;
+  background-color: Canvas;
 }
   header h1 {
     margin:0;
@@ -45,54 +48,44 @@ footer {
  * SECTION
  *******************/
 section {
-  padding:48px 0;
+  padding:2% 0;
 }
   section h3 {
     padding:0 0 8px;
-    line-height:40px;
+    line-height:30px;
     font-weight:bold;
-    font-size:32px;
-    color:#000000;
+    font-size:30px;
   }
   section .lead {
     font-size:20px;
   }
   section p {
-    margin-bottom:1em;
+    margin-bottom:0.5em;
   }
   section p small {
     opacity:0.5;
   }
   section a,
   section a:hover {
-    color:#000000;
+    color: CanvasText;
   }
+
+  #news {
+    max-height: 200px;
+    overflow: auto;
+  }
+
 
 /*******************
  * INTRO SCREEN
  *******************/
-.intro-screen,
-.intro-screen header {
-  background-color:#000000;
-  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
-  color:#fff;
-}
-  .intro-screen h1,
-  .intro-screen h2,
-  .intro-screen h3 {
-    color:#fff;
-  }
-  .intro-screen a,
-  .intro-screen a:hover {
-    color:#fff;
-  }
 
 /*******************
  * TRANSITIONS
  *******************/
-body,
+/* body,
 header {
   -webkit-transition:background-color .5s;
      -moz-transition:background-color .5s;
           transition:background-color .5s;
-}
+} */
