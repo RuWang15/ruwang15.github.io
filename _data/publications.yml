@@ -10,6 +10,23 @@
 -
   type: conference
   title: > 
+    **Characterizing Visual Intents for People with Low Vision through Eye Tracking**
+  authors: '**Ru Wang**, Ruijia Chen, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao'
+  conference: >
+    *ArXiv*
+  year: 2025
+  url: https://arxiv.org/abs/2501.14327
+-
+  type: conference
+  title: > 
+    **PeerEdu: Bootstrapping Online Learning Behaviors via Asynchronous Area of Interest Sharing from Peer Gaze**
+  authors: 'Songlin Xu, Dongyin Hu, **Ru Wang**, Xinyu Zhang'
+  conference: >
+    *To Appear at CHI '25*
+  year: 2025
+-
+  type: conference
+  title: > 
     **GazePrompt: Enhancing Low Vision People's Reading Experience with Gaze-Aware Augmentations**
   authors: '**Ru Wang**, Zach Potter, Yun Ho, Daniel Killough, Linda Zeng, Sanbrita Mondal, Yuhang Zhao'
   conference: >
