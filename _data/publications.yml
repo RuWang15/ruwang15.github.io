@@ -13,25 +13,35 @@
     **Characterizing Visual Intents for People with Low Vision through Eye Tracking**
   authors: '**Ru Wang**, Ruijia Chen, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao'
   conference: >
-    *ArXiv (in submission)*
+    *Accepted at ASSETS '25*
   year: 2025
-  url: https://arxiv.org/abs/2501.14327
+  # url: https://arxiv.org/abs/2501.14327
 -
   type: conference
   title: > 
     **"It's Mentally Painful to Stop": Design Opportunities in In-Situ Self-Management Technology for People with Obsessive-Compulsive Disorder**
   authors: '**Ru Wang**, Kexin Zhang, Yuqing Wang, Keri Brown, Yuhang Zhao'
   conference: >
-    *ArXiv (in submission)*
+    *Accepted at ASSETS '25*
   year: 2025
-  url: https://arxiv.org/abs/2501.13308
+  # url: https://arxiv.org/abs/2501.13308
+-
+  type: conference
+  title: > 
+    **Characterizing Collective Efforts in Content Sharing and Quality Control for ADHD-relevant Content on Video-sharing Platforms**
+  authors: >
+    Hanxiu 'Hazel' Zhu, Avanthika Senthil Kumar, Sihang Zhao, **Ru Wang**, Xin Tong, Yuhang Zhao
+  conference: >
+    *Accepted at ASSETS '25*
+  year: 2025
+  # url: https://arxiv.org/abs/2501.14327
 -
   type: conference
   title: > 
     **PeerEdu: Bootstrapping Online Learning Behaviors via Asynchronous Area of Interest Sharing from Peer Gaze**
   authors: 'Songlin Xu, Dongyin Hu, **Ru Wang**, Xinyu Zhang'
   conference: >
-    *To Appear at CHI '25*
+    *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)*
   year: 2025
 -
   type: conference
