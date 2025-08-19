@@ -2,7 +2,7 @@
   name: >
     Understanding User Intent across Visual Abilities and Tasks via Eye Tracking
   location: UW-Madison
-  advisor: Prof. Yuhang Zhao
+  # advisor: Prof. Yuhang Zhao
   description: > 
     Using eye tracking, we compare the gaze behavior of sighted and low vision people during reading, and uncover low vision users' gaze-level reading challenges under different magnification modes. 
     We further identify the subtasks in image viewing activities and characterize gaze patterns of users with varying visual abilities during these tasks, enabling user intent recognition across visual abilities.
@@ -11,7 +11,7 @@
   name: >
     Designing In-Situ AR Intervention to Support OCD Self-Management
   location: UW-Madison
-  advisor: Prof. Yuhang Zhao
+  # advisor: Prof. Yuhang Zhao
   description: > 
     We design AI-driven AR interventions that incorporates core strategies of effective OCD therapies (e.g., ERP and ACT). By rendering restrictive visual augmentations on real world objects involved in compulsive behaviors (e.g., hand washing), 
     our system can encourage users to disengage from compulsions, and help them start an in-situ exposure practice.
@@ -20,7 +20,7 @@
   name: >
     Gaze‐Aware Visual Augmentations to Enhance Low Vision People's Reading Experience
   location: UW-Madison
-  advisor: Prof. Yuhang Zhao
+  # advisor: Prof. Yuhang Zhao
   description: > 
     We improve the gaze data collection process to make eye tracking accessible to low vision users, and identify low vision people's unique gaze patterns when reading using eye-tracking. 
     Based upon our findings, we further design gaze-aware visual augmentations that enhance low vision users' reading experience. Our system facilitates line switching/following and difficult word recognition.
@@ -30,7 +30,7 @@
   name: >
     Understanding Cooking Challenges for People with Visual Impairment
   location: UW-Madison
-  advisor: Prof. Yuhang Zhao
+  # advisor: Prof. Yuhang Zhao
   description: > 
     We conduct contexual inquery study to observe how people with visual impairments (PVI) cook in their own kitchens. We also interview rehabilitation professionals about kitchen related training. 
     Combining the two studies, we seek to understand PVI's unique challenges and needs in the kitchen and identify design considerations for future assistive technology. 
@@ -64,7 +64,7 @@
 -
   name: ARTEMIS (Augmented Reality Technology-Enabled reMote Integrated Surgery)
   location: UCSD
-  advisor: Prof. Nadir Weibel
+  # advisor: Prof. Nadir Weibel
   description: >
     ARTEMIS is a collaborative system for surgical telementoring. The surgical ﬁeld is recreated for a remote expert in VR, and the remote expert annotations and avatar are displayed into the novice’s ﬁeld of view in real-time using AR. 
     ARTEMIS supports remote surgical mentoring of novices through synchronous point, draw, and look affordances and asynchronous video clips.
