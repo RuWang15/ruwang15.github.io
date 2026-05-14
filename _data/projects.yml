@@ -1,5 +1,14 @@
 -
   name: >
+    Training-Free Continuous Semantic Editing for 3D Objects
+  location: Fujitsu Research of America
+  # advisor: Dr. Aakar Gupta
+  description: > 
+    Fine-grained control over continuous semantic attributes of 3D objects is essential for 3D content creation, but is not well supported by conventional 3D modeling workflows or prompt-based interaction with existing generative AI tools. 
+    We present a technique for continuous semantic attribute editing of 3D objects that requires no per-attribute training. Given a user-specified attribute, our pipeline constructs a semantic editing direction in the latent space of a state-of-the-art 3D generation model, presenting a diverse and coherent spectrum of 3D variations. 
+  image: /img/p5_cc_last.gif
+-
+  name: >
     Understanding User Intent across Visual Abilities and Tasks via Eye Tracking
   location: UW-Madison
   # advisor: Prof. Yuhang Zhao
