@@ -63,76 +63,96 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   <!-- ==================== -->
   <header>
     <div class="container">
-      <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
-        <div class="col-xs-9 col-sm-5">
+      <div class="header-row">
+        <div class="header-brand">
           <h1>{{ site.data.personal.name }}</h1>
           <h2>{{ site.data.personal.label }}</h2>
         </div>
-        <div class="col-xs-3 col-sm-1" style="text-align:right;">
-          <a href="{{ site.baseurl }}" aria-label="Home">
-            <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" style="width:42px;height:42px;" alt="logo">
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <nav class="site-nav" aria-label="Section navigation">
+        <a href="{{ site.baseurl }}" class="header-logo" aria-label="Home">
+          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" alt="logo">
+        </a>
+        <div class="nav-wrap">
+          <nav class="site-nav" id="siteNav" aria-label="Section navigation">
             <a href="#section-about">About</a>
             {% if site.data.news.size > 0 %}<a href="#section-news">News</a>{% endif %}
             {% if site.data.projects.size > 0 %}<a href="#section-projects">Projects</a>{% endif %}
             {% if site.data.publications.size > 0 %}<a href="#section-publications">Publications</a>{% endif %}
             {% if site.data.designs.size > 0 %}<a href="#section-designs">Misc.</a>{% endif %}
-            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
-              <i class="fa fa-moon-o" aria-hidden="true"></i>
-            </button>
-            <div class="lens-menu-wrap">
-              <button type="button" class="theme-toggle" id="lensToggle" aria-haspopup="true" aria-expanded="false" aria-controls="lensMenu" aria-label="Reading tools" title="Reading tools">
-                <i class="fa fa-search-plus" aria-hidden="true"></i>
-              </button>
-              <div class="lens-hint" id="lensHint" role="status" aria-live="polite" hidden>
-                Try new accessibility feature
-              </div>
-              <div class="lens-menu" id="lensMenu" role="dialog" aria-label="Reading tools" hidden>
-                <div class="lens-row">
-                  <div class="lens-row-head">
-                    <label for="pageScale">Page font size</label>
-                    <span class="lens-value" id="pageScaleVal">1.0×</span>
-                  </div>
-                    <input type="range" id="pageScale" min="1" max="5" step="0.25" value="1">
-                </div>
-
-                <div class="lens-row">
-                  <div class="lens-row-head">
-                    <label for="wordMagOn">Word magnifier</label>
-                    <label class="switch" title="Toggle word magnifier">
-                      <input type="checkbox" id="wordMagOn">
-                      <span class="switch-slider"></span>
-                    </label>
-                  </div>
-                  <div class="lens-row-sub">
-                    <input type="range" id="wordMagScale" min="1.5" max="5" step="0.1" value="2.5" aria-label="Word magnifier level">
-                    <span class="lens-value" id="wordMagVal">2.5×</span>
-                  </div>
-                </div>
-
-                <div class="lens-row">
-                  <div class="lens-row-head">
-                    <label for="lineHlOn">Line highlighter</label>
-                    <label class="switch" title="Toggle line highlighter">
-                      <input type="checkbox" id="lineHlOn">
-                      <span class="switch-slider"></span>
-                    </label>
-                  </div>
-                  <div class="lens-row-sub">
-                    <input type="color" id="lineHlColor" aria-label="Highlight color">
-                    <button type="button" class="lens-link" id="lineHlReset">Reset</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </nav>
+          <button type="button" class="hamburger" id="hamburgerBtn" aria-haspopup="true" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- ==================== -->
+  <!-- FLOATING ACTION BUTTONS (theme + reading tools) -->
+  <!-- ==================== -->
+  <div class="fab-stack" aria-label="Page tools">
+    <div class="lens-menu-wrap">
+      <button type="button" class="fab" id="lensToggle" aria-haspopup="true" aria-expanded="false" aria-controls="lensMenu" aria-label="Reading tools" title="Reading tools">
+        <i class="fa fa-search-plus" aria-hidden="true"></i>
+      </button>
+      <div class="lens-hint" id="lensHint" role="status" aria-live="polite" hidden>
+        Try new accessibility feature
+      </div>
+      <div class="lens-menu" id="lensMenu" role="dialog" aria-label="Reading tools" hidden>
+        <div class="lens-row">
+          <div class="lens-row-head">
+            <span class="lens-label-group">
+              <label for="pageScale">Page font size</label>
+            </span>
+            <span class="lens-value" id="pageScaleVal">1.0×</span>
+          </div>
+          <input type="range" id="pageScale" min="1" max="5" step="0.25" value="1">
+        </div>
+
+        <div class="lens-row">
+          <div class="lens-row-head">
+            <span class="lens-label-group">
+              <label for="wordMagOn">Word magnifier</label>
+              <button type="button" class="info-icon" aria-label="About word magnifier" data-tip="Shows a magnified bubble of the word your cursor is hovering on. Use the slider below to set the magnification (1.5× to 5× the local font size).">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </button>
+            </span>
+            <label class="switch" title="Toggle word magnifier">
+              <input type="checkbox" id="wordMagOn">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+          <div class="lens-row-sub">
+            <input type="range" id="wordMagScale" min="1.5" max="5" step="0.1" value="2.5" aria-label="Word magnifier level">
+            <span class="lens-value" id="wordMagVal">2.5×</span>
+          </div>
+        </div>
+
+        <div class="lens-row">
+          <div class="lens-row-head">
+            <span class="lens-label-group">
+              <label for="lineHlOn">Line highlighter</label>
+              <button type="button" class="info-icon" aria-label="About line highlighter" data-tip="Highlights the line of text under your cursor like a marker. Pick a custom color, or hit Reset to use the theme default (yellow in light mode, blue in dark mode).">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </button>
+            </span>
+            <label class="switch" title="Toggle line highlighter">
+              <input type="checkbox" id="lineHlOn">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+          <div class="lens-row-sub">
+            <input type="color" id="lineHlColor" aria-label="Highlight color">
+            <button type="button" class="lens-link" id="lineHlReset">Reset</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button type="button" class="fab" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+      <i class="fa fa-moon-o" aria-hidden="true"></i>
+    </button>
+  </div>
 
   <!-- ==================== -->
   <!-- ABOUT -->
@@ -318,6 +338,17 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   {% endif %}
 
   <!-- ==================== -->
+  <!-- IMAGE LIGHTBOX -->
+  <!-- ==================== -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <div class="lightbox-caption" id="lightboxCaption" hidden></div>
+  </div>
+
+  <!-- ==================== -->
   <!-- FOOTER -->
   <!-- ==================== -->
   <footer>
@@ -413,6 +444,85 @@ http://en.wikipedia.org/wiki/Albertine_owlet
       }
 
       // ===========================================
+      // Hamburger nav (auto-collapses when crowded)
+      // ===========================================
+      var hamburgerBtn = document.getElementById('hamburgerBtn');
+      var siteNav = document.getElementById('siteNav');
+
+      function setNavOpen(open) {
+        if (!siteNav) return;
+        siteNav.classList.toggle('is-open', !!open);
+        if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          setNavOpen(!siteNav.classList.contains('is-open'));
+        });
+      }
+      if (siteNav) {
+        siteNav.addEventListener('click', function (e) {
+          if (e.target.tagName === 'A') setNavOpen(false);
+        });
+      }
+      document.addEventListener('click', function (e) {
+        if (!siteNav || !hamburgerBtn) return;
+        if (!siteNav.contains(e.target) && !hamburgerBtn.contains(e.target)) setNavOpen(false);
+      });
+
+      // Detect when the header content needs more room than the container can
+      // afford. The brand has flex:1 / min-width:0, so it silently shrinks
+      // instead of letting the nav wrap — that means we have to compute the
+      // brand's NATURAL width and check whether it fits alongside the logo
+      // and nav. Re-runs on resize and after font-size changes.
+      var crowdingRaf = null;
+      function checkNavCrowding() {
+        if (!siteNav || !hamburgerBtn) return;
+        if (crowdingRaf) cancelAnimationFrame(crowdingRaf);
+        crowdingRaf = requestAnimationFrame(function () {
+          crowdingRaf = null;
+          var wasCrowded = document.body.classList.contains('nav-crowded');
+          document.body.classList.remove('nav-crowded');
+          siteNav.classList.remove('is-open');
+          void siteNav.offsetHeight;
+
+          var headerRow = siteNav.closest('.header-row');
+          if (!headerRow) return;
+          var brand = headerRow.querySelector('.header-brand');
+          var logo = headerRow.querySelector('.header-logo');
+          var navWrap = headerRow.querySelector('.nav-wrap');
+          if (!brand || !navWrap) return;
+
+          // Measure the brand's natural width by temporarily unconstraining it.
+          var savedFlex = brand.style.flex;
+          var savedMin = brand.style.minWidth;
+          var savedWs = brand.style.whiteSpace;
+          brand.style.flex = '0 0 auto';
+          brand.style.minWidth = 'auto';
+          brand.style.whiteSpace = 'nowrap';
+          var brandNatural = brand.scrollWidth;
+          brand.style.flex = savedFlex;
+          brand.style.minWidth = savedMin;
+          brand.style.whiteSpace = savedWs;
+
+          var logoW = logo ? logo.offsetWidth : 0;
+          var navW = navWrap.offsetWidth;
+          var gap = parseFloat(getComputedStyle(headerRow).gap) || 14;
+          var available = headerRow.clientWidth;
+          var natural = brandNatural + logoW + navW + gap * (logo ? 2 : 1);
+
+          var crowded = natural > available;
+          document.body.classList.toggle('nav-crowded', crowded);
+          if (!crowded && wasCrowded) setNavOpen(false);
+        });
+      }
+      window.addEventListener('resize', checkNavCrowding);
+      // Initial check after fonts/layout settle
+      window.addEventListener('load', checkNavCrowding);
+      checkNavCrowding();
+
+      // ===========================================
       // Reading tools: page-scale, word magnifier, line highlighter
       // ===========================================
       var lensBtn = document.getElementById('lensToggle');
@@ -460,11 +570,8 @@ http://en.wikipedia.org/wiki/Albertine_owlet
       function applyLineColor() {
         if (settings.lineHlColor) {
           document.documentElement.style.setProperty('--lens-bg', settings.lineHlColor);
-          // Derive a slightly darker border from the same color
-          document.documentElement.style.setProperty('--lens-border', settings.lineHlColor);
         } else {
           document.documentElement.style.removeProperty('--lens-bg');
-          document.documentElement.style.removeProperty('--lens-border');
         }
       }
       function applyButtonState() {
@@ -527,7 +634,8 @@ http://en.wikipedia.org/wiki/Albertine_owlet
           if (pageScaleVal) pageScaleVal.textContent = fmtScale(settings.pageScale);
           applyPageScale();
           saveSettings();
-          // Layout shifted — re-evaluate line edges, line highlight & magnifier
+          // Layout shifted — re-evaluate header crowding & lens overlays
+          checkNavCrowding();
           if (lensRaf == null) lensRaf = requestAnimationFrame(updateLens);
         });
       }
@@ -567,11 +675,55 @@ http://en.wikipedia.org/wiki/Albertine_owlet
           saveSettings();
         });
       }
+      // Info-icon tooltip — single shared element, JS-positioned so it never
+      // gets clipped by the menu / viewport edge.
+      var infoTooltip = document.createElement('div');
+      infoTooltip.className = 'info-tooltip';
+      infoTooltip.hidden = true;
+      document.body.appendChild(infoTooltip);
 
-      // First-run hint bubble
+      function showInfoTip(iconEl) {
+        var tip = iconEl.getAttribute('data-tip');
+        if (!tip) return;
+        infoTooltip.textContent = tip;
+        infoTooltip.hidden = false;
+        infoTooltip.classList.remove('is-visible');
+        // Force layout before measuring
+        var tw = infoTooltip.offsetWidth;
+        var th = infoTooltip.offsetHeight;
+        var ir = iconEl.getBoundingClientRect();
+        var pad = 10;
+        // Prefer above; flip below if not enough room
+        var top = ir.top - th - 10;
+        if (top < pad) top = ir.bottom + 10;
+        // Centre horizontally on the icon, then clamp into viewport
+        var left = ir.left + ir.width / 2 - tw / 2;
+        if (left < pad) left = pad;
+        if (left + tw > window.innerWidth - pad) left = window.innerWidth - tw - pad;
+        infoTooltip.style.top = top + 'px';
+        infoTooltip.style.left = left + 'px';
+        // Trigger fade-in on next frame
+        requestAnimationFrame(function () { infoTooltip.classList.add('is-visible'); });
+      }
+      function hideInfoTip() {
+        infoTooltip.classList.remove('is-visible');
+        infoTooltip.hidden = true;
+      }
+
+      document.querySelectorAll('.info-icon').forEach(function (btn) {
+        btn.addEventListener('mouseenter', function () { showInfoTip(this); });
+        btn.addEventListener('mouseleave', hideInfoTip);
+        btn.addEventListener('focus', function () { showInfoTip(this); });
+        btn.addEventListener('blur', hideInfoTip);
+        // Prevent menu's outside-click handler from firing
+        btn.addEventListener('click', function (e) { e.stopPropagation(); e.preventDefault(); });
+      });
+
+      // First-run hint bubble (key versioned so layout changes re-show it)
+      var HINT_KEY = 'lensHintDismissed_v2';
       var lensHint = document.getElementById('lensHint');
       var hintDismissed = false;
-      try { hintDismissed = localStorage.getItem('lensHintDismissed') === '1'; } catch (e) {}
+      try { hintDismissed = localStorage.getItem(HINT_KEY) === '1'; } catch (e) {}
       if (lensHint && !hintDismissed) {
         lensHint.hidden = false;
       }
@@ -580,7 +732,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
         hintDismissed = true;
         lensHint.classList.add('is-leaving');
         setTimeout(function () { lensHint.hidden = true; lensHint.classList.remove('is-leaving'); }, 250);
-        try { localStorage.setItem('lensHintDismissed', '1'); } catch (e) {}
+        try { localStorage.setItem(HINT_KEY, '1'); } catch (e) {}
       }
 
       // Menu open/close
@@ -711,7 +863,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
 
         // Don't run over interactive chrome (header nav, buttons, menu)
         var hit = document.elementFromPoint(lastX, lastY);
-        if (!hit || hit.closest('header') || hit.closest('button') || hit.closest('.reading-lens-magnifier') || hit.closest('.lens-menu')) {
+        if (!hit || hit.closest('header') || hit.closest('button') || hit.closest('.reading-lens-magnifier') || hit.closest('.lens-menu') || hit.closest('.fab-stack')) {
           lensLine.style.display = 'none';
           lensMag.style.display = 'none';
           lensCursor.style.display = 'none';
@@ -838,6 +990,78 @@ http://en.wikipedia.org/wiki/Albertine_owlet
           lensRaf = requestAnimationFrame(updateLens);
         }
       }, { passive: true });
+
+      // ===========================================
+      // Image lightbox — click any content image to enlarge it
+      // ===========================================
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var lightboxCaption = document.getElementById('lightboxCaption');
+      var lightboxClose = document.getElementById('lightboxClose');
+
+      function captionForImage(img) {
+        if (img.alt && img.alt.trim()) return img.alt.trim();
+        // Fall back to project/design title (the <b> in the sibling text block)
+        var row = img.closest('.project-row') || img.closest('.row');
+        if (row) {
+          var title = row.querySelector('p b a, p b, h4');
+          if (title) return title.textContent.trim();
+        }
+        return '';
+      }
+
+      function openLightbox(img) {
+        if (!lightbox || !lightboxImg) return;
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || '';
+        var cap = captionForImage(img);
+        if (cap) {
+          lightboxCaption.textContent = cap;
+          lightboxCaption.hidden = false;
+        } else {
+          lightboxCaption.hidden = true;
+        }
+        lightbox.hidden = false;
+        document.body.classList.add('lightbox-open');
+        // Move focus for keyboard users
+        setTimeout(function () { lightboxClose && lightboxClose.focus(); }, 0);
+      }
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.hidden = true;
+        document.body.classList.remove('lightbox-open');
+        lightboxImg.removeAttribute('src');
+      }
+
+      // Tag eligible images and bind click handlers
+      var contentImgs = document.querySelectorAll('img');
+      contentImgs.forEach(function (img) {
+        if (img.closest('header')) return;            // skip logo
+        if (img.closest('footer')) return;
+        if (img.closest('.fab-stack')) return;
+        if (img.closest('.lens-menu')) return;
+        if (img.closest('.lightbox')) return;
+        img.classList.add('lightbox-eligible');
+        img.addEventListener('click', function (e) {
+          // Override the wrapping <a>'s navigation, if any
+          e.preventDefault();
+          openLightbox(img);
+        });
+      });
+
+      if (lightbox) {
+        lightbox.addEventListener('click', function (e) {
+          // Close only on backdrop clicks; ignore clicks on the image, caption, or close button
+          if (e.target === lightbox) closeLightbox();
+        });
+      }
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', function (e) {
+        if (lightbox && !lightbox.hidden && (e.key === 'Escape' || e.key === 'Esc')) {
+          e.preventDefault();
+          closeLightbox();
+        }
+      });
     })();
   </script>
 </body>
