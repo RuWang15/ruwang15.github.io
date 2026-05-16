@@ -8,8 +8,8 @@
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --line: #e6e4df;
-  --accent: #b65437;     /* warm terracotta */
-  --accent-soft: rgba(182, 84, 55, 0.10);
+  --accent: #114D92;     /* warm terracotta */
+  --accent-soft: rgba(209, 231, 255, 0.5);
   --radius: 10px;
   --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -23,8 +23,8 @@
     --text: #ececec;
     --muted: #9a9a9a;
     --line: #262629;
-    --accent: #e08a6e;
-    --accent-soft: rgba(224, 138, 110, 0.12);
+    --accent: #517DAF;
+    --accent-soft: rgba(209, 231, 255, 0.2);
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.25);
   }
 }
@@ -36,8 +36,8 @@ html[data-theme="light"] {
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --line: #e6e4df;
-  --accent: #b65437;
-  --accent-soft: rgba(182, 84, 55, 0.10);
+  --accent: #114D92;
+  --accent-soft: rgba(209, 231, 255, 0.5);
   --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
 }
 html[data-theme="dark"] {
@@ -46,8 +46,8 @@ html[data-theme="dark"] {
   --text: #ececec;
   --muted: #9a9a9a;
   --line: #262629;
-  --accent: #e08a6e;
-  --accent-soft: rgba(224, 138, 110, 0.12);
+  --accent: #517DAF;
+  --accent-soft: rgba(209, 231, 255, 0.2);
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.25);
 }
 
@@ -310,6 +310,38 @@ body.nav-crowded .hamburger { display: inline-flex; }
 
 section { padding: 28px 0; }
 
+/* -----------------------------------------------------------
+   Equalize inter-section spacing.
+   The gap between two consecutive sections should come ONLY
+   from the section's own padding (28px bottom + 28px top).
+   Strip any trailing margin/padding from the last visible
+   element inside each section so every gap is identical.
+   ----------------------------------------------------------- */
+.container.reveal > .row > section > *:last-child,
+.container.reveal > .row > section > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+/* NB: use :first-of-type, not :first-child — the first *child* of <section>
+   is the <h3>, so :first-child would never match a .project-row. */
+.project-row:first-of-type { padding-top: 0; }
+.project-row:last-of-type { padding-bottom: 0; }
+#section-designs > .row > section > .row:first-of-type { padding-top: 0; }
+#section-designs > .row > section > .row:last-of-type { padding-bottom: 0; }
+#section-publications br:last-of-type { display: none; }
+/* The hidden <br> above is still :last-child in the DOM, so the generic
+   "zero the last child's margin-bottom" rule never reaches the visually
+   last element. Zero the trailing <p> directly here. */
+#section-publications > .row > section > p:last-of-type {
+  margin-bottom: 0;
+}
+/* The "padding: 18px 0" rule below also matches the OUTER row that wraps
+   the whole Misc section, pushing the section ~18px lower than its peers.
+   We only want that padding on the per-design inner rows. */
+#section-designs > .row {
+  padding: 0;
+  border-bottom: none;
+}
+
 section h3 {
   padding: 0 0 18px;
   margin: 0 0 24px;
@@ -348,6 +380,15 @@ section p small { color: var(--muted); opacity: 1; }
 #section-about .avatar img:hover {
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 16px 40px rgba(0,0,0,0.08);
+}
+
+/* On medium+ screens, let the avatar grow into the empty `col-md-offset-1`
+   gutter between its column and the lead column. The lead column itself isn't touched, so the bio text stays at the same position, width, and font-size — only the image gets bigger. */
+@media (min-width: 992px) {
+  #section-about .avatar {
+    width: 120%;
+    max-width: 120%;
+  }
 }
 
 #section-about .lead strong,
@@ -706,7 +747,10 @@ html[data-theme="dark"] {
   box-shadow: 0 10px 24px rgba(0,0,0,0.20), 0 2px 5px rgba(0,0,0,0.10);
 }
 .fab.is-active {
-  background: var(--accent-soft);
+  /* Layer the soft accent tint over the opaque surface so the button
+     stays fully opaque and doesn't show page content through it. */
+  background: linear-gradient(var(--accent-soft), var(--accent-soft)),
+              var(--bg-elev);
   border-color: var(--accent);
   color: var(--accent);
 }
