@@ -401,22 +401,23 @@ section p small { color: var(--muted); opacity: 1; }
 }
 
 /* Social icons */
-#section-about section .lead + p .fa,
-#section-about .fa {
+#section-about section .lead + p [class*="fa-"],
+#section-about [class*="fa-"] {
   color: var(--muted);
 }
-#section-about a .fa {
+#section-about a [class*="fa-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px; height: 36px;
+  width: 40px; height: 40px;
   border-radius: 999px;
   border: 1px solid var(--line);
   color: var(--text);
   margin-right: 4px;
+  font-size: calc(18px * var(--scale));
   transition: all .25s var(--ease);
 }
-#section-about a:hover .fa {
+#section-about a:hover [class*="fa-"] {
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-2px);
@@ -545,12 +546,12 @@ section p b a { font-weight: 600; }
 section p b a:hover { color: var(--accent); }
 
 /* Inline youtube icon */
-.fa-youtube-play {
+.fa-youtube {
   color: var(--muted);
   margin-left: 6px;
   transition: color .2s var(--ease), transform .2s var(--ease);
 }
-.fa-youtube-play:hover { color: var(--accent); transform: scale(1.15); }
+.fa-youtube:hover { color: var(--accent); transform: scale(1.15); }
 
 /* =====================================================
    FOOTER

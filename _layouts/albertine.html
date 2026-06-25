@@ -27,9 +27,9 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default.css">
   <link rel="icon" href="/img/logo_ruru.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Set theme before paint to avoid flash -->
   <script>
@@ -80,7 +80,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
             {% if site.data.designs.size > 0 %}<a href="#section-designs">Misc.</a>{% endif %}
           </nav>
           <button type="button" class="hamburger" id="hamburgerBtn" aria-haspopup="true" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
           </button>
         </div>
       </div>
@@ -93,7 +93,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   <div class="fab-stack" aria-label="Page tools">
     <div class="lens-menu-wrap">
       <button type="button" class="fab" id="lensToggle" aria-haspopup="true" aria-expanded="false" aria-controls="lensMenu" aria-label="Reading tools" title="Reading tools">
-        <i class="fa fa-search-plus" aria-hidden="true"></i>
+        <i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>
       </button>
       <div class="lens-hint" id="lensHint" role="status" aria-live="polite" hidden>
         Try new accessibility feature
@@ -114,7 +114,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
             <span class="lens-label-group">
               <label for="wordMagOn">Word magnifier</label>
               <button type="button" class="info-icon" aria-label="About word magnifier" data-tip="Shows a magnified bubble of the word your cursor is hovering on. Use the slider below to set the magnification (1.5× to 5× the local font size).">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
               </button>
             </span>
             <label class="switch" title="Toggle word magnifier">
@@ -133,7 +133,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
             <span class="lens-label-group">
               <label for="lineHlOn">Line highlighter</label>
               <button type="button" class="info-icon" aria-label="About line highlighter" data-tip="Highlights the line of text under your cursor like a marker. Pick a custom color, or hit Reset to use the theme default (yellow in light mode, blue in dark mode).">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
               </button>
             </span>
             <label class="switch" title="Toggle line highlighter">
@@ -150,7 +150,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
       </div>
     </div>
     <button type="button" class="fab" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
-      <i class="fa fa-moon-o" aria-hidden="true"></i>
+      <i class="fa-regular fa-moon" aria-hidden="true"></i>
     </button>
   </div>
 
@@ -164,18 +164,18 @@ http://en.wikipedia.org/wiki/Albertine_owlet
           <img src="{{ site.baseurl }}{{ site.data.personal.selfie }}" class="img-rect" style="margin-top:0px;width:100%;">
         </div>
         <p style="margin-top:18px;">
-          <i class="fa fa-envelope"></i> &nbsp; {{ site.data.personal.email | replace:'@',' <small>[at]</small> ' | replace:'.',' <small>[dot]</small> ' }}
+          <i class="fa-solid fa-envelope"></i> &nbsp; {{ site.data.personal.email | replace:'@',' <small>[at]</small> ' | replace:'.',' <small>[dot]</small> ' }}
         </p>
         <div style="margin-top:12px;">
           {% for profile in site.data.personal.profiles %}
             {% if profile.network == 'Google Scholar' %}
-              <a href="{{ profile.url }}" target="_blank" aria-label="Google Scholar"><i class="fa fa-google"></i></a>
+              <a href="{{ profile.url }}" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
             {% elsif profile.network == 'LinkedIn' %}
-              <a href="{{ profile.url }}" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="{{ profile.url }}" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             {% elsif profile.network == 'Twitter' %}
-              <a href="{{ profile.url }}" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="{{ profile.url }}" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
             {% elsif profile.network == 'CV' %}
-              <a href="{{ profile.url }}" target="_blank" aria-label="CV"><i class="fa fa-file">{{ profile.note }}</i></a>
+              <a href="{{ profile.url }}" target="_blank" aria-label="CV"><i class="fa-solid fa-file">{{ profile.note }}</i></a>
             {% endif %}
           {% endfor %}
         </div>
@@ -237,7 +237,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
                     {{ project.name }}
                   {% endif %}
                   {% if project.video %}
-                    <a href="{{ project.video }}" target="_blank" aria-label="Watch video"><i class="fa fa-youtube-play"></i></a>
+                    <a href="{{ project.video }}" target="_blank" aria-label="Watch video"><i class="fa-brands fa-youtube"></i></a>
                   {% endif %}
                 </b>
               </p>
@@ -342,7 +342,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   <!-- ==================== -->
   <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
     <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">
-      <i class="fa fa-times" aria-hidden="true"></i>
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
     <img class="lightbox-img" id="lightboxImg" alt="">
     <div class="lightbox-caption" id="lightboxCaption" hidden></div>
@@ -430,7 +430,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
         var theme = document.documentElement.getAttribute('data-theme');
         var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         var isDark = theme ? theme === 'dark' : prefersDark;
-        icon.className = isDark ? 'fa fa-sun-o' : 'fa fa-moon-o';
+        icon.className = isDark ? 'fa-regular fa-sun' : 'fa-regular fa-moon';
       }
       applyIcon();
       if (btn) {
