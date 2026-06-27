@@ -377,10 +377,27 @@ section p small { color: var(--muted); opacity: 1; }
   box-shadow: var(--shadow);
   transition: transform .5s var(--ease), box-shadow .4s var(--ease);
 }
-#section-about .avatar img:hover {
+#section-about .avatar:hover img {
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 16px 40px rgba(0,0,0,0.08);
 }
+
+/* Day/night photos are stacked: the default sits in normal flow and the
+   other (.is-alt) overlays it, fading in on hover. The swap is a pure
+   opacity toggle on already-decoded images, so it's instant. */
+#section-about .avatar { position: relative; }
+#section-about .avatar .profile-pic {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+#section-about .avatar .profile-pic.is-alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#section-about .avatar:hover .profile-pic.is-alt { opacity: 1; }
 
 /* On medium+ screens, let the avatar grow into the empty `col-md-offset-1`
    gutter between its column and the lead column. The lead column itself isn't touched, so the bio text stays at the same position, width, and font-size — only the image gets bigger. */
@@ -1041,113 +1058,4 @@ html[data-theme="dark"] {
     bottom: 80px; /* leave room for the FAB stack */
     width: auto;
   }
-}
-
-/* =====================================================
-   IMAGE LIGHTBOX
-   ===================================================== */
-.lightbox-eligible {
-  cursor: zoom-in;
-  transition: transform .25s var(--ease), filter .25s var(--ease);
-}
-.lightbox-eligible:hover {
-  filter: brightness(1.04);
-}
-
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 400;
-  background: rgba(0, 0, 0, 0.85);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  overflow: hidden;
-  cursor: zoom-out;
-  animation: lightboxBgIn .22s ease-out;
-}
-.lightbox[hidden] { display: none; }
-
-.lightbox-img {
-  /* Width ≤ 90vw AND height ≤ 90vh, aspect ratio preserved by the browser.
-     Smaller images keep their natural size; larger ones scale down so the
-     longer dimension hits its cap and the other stays proportionally smaller. */
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5),
-              0 4px 12px rgba(0, 0, 0, 0.3);
-  background: #fff;
-  display: block;
-  cursor: default;
-  animation: lightboxImgIn .3s var(--ease);
-}
-.lightbox-caption {
-  position: absolute;
-  left: 50%;
-  bottom: 16px;
-  transform: translateX(-50%);
-  max-width: 80vw;
-  color: #f3f3f3;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: center;
-  padding: 6px 14px;
-  background: rgba(0, 0, 0, 0.45);
-  border-radius: 6px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  pointer-events: none;
-}
-.lightbox-caption[hidden] { display: none; }
-
-.lightbox-close {
-  position: absolute;
-  top: 18px;
-  right: 22px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  transition: background .2s var(--ease), transform .2s var(--ease), border-color .2s var(--ease);
-}
-.lightbox-close:hover,
-.lightbox-close:focus-visible {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: rotate(90deg);
-  outline: none;
-}
-
-body.lightbox-open { overflow: hidden; }
-
-@keyframes lightboxBgIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@keyframes lightboxImgIn {
-  from { opacity: 0; transform: scale(0.94); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lightbox, .lightbox-figure { animation: none; }
-}
-
-@media (max-width: 640px) {
-  .lightbox { padding: 16px; }
-  .lightbox-img { max-width: 96vw; border-radius: 8px; }
-  .lightbox-close { top: 12px; right: 12px; }
 }

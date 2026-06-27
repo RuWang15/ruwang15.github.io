@@ -10,10 +10,26 @@
 -
   type: conference
   title: > 
+    **SemanticSlider3D: Training-Free Continuous Semantic Editing for 3D Objects**
+  authors: '**Ru Wang**, Rahul Jain, Koichiro Niinuma, Aakar Gupta'
+  conference: >
+    *To appear at UIST '26*
+  year: 2026
+-
+  type: conference
+  title: > 
+    **"It's Like Drinking from a Fire Hose": Understanding and Characterizing Video Learning Experiences for Individuals with ADHD**
+  authors: Hanxiu 'Hazel' Zhu, Weiyu Zhang, **Ru Wang**, Yuhang Zhao
+  conference: >
+    *To appear at ASSETS '26*
+  year: 2026
+-
+  type: conference
+  title: > 
     **Characterizing Visual Intents for People with Low Vision through Eye Tracking**
   authors: '**Ru Wang**, Ruijia Chen, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao'
   conference: >
-    *To appear at ASSETS '25*
+    *Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25)*
   year: 2025
   url: https://arxiv.org/abs/2501.14327
 -
@@ -22,7 +38,7 @@
     **"It was Mentally Painful to Try and Stop": Design Opportunities for Just-in-Time Interventions for People with Obsessive-Compulsive Disorder in the Real World**
   authors: '**Ru Wang**, Kexin Zhang, Yuqing Wang, Keri Brown, Yuhang Zhao'
   conference: >
-    *To appear at ASSETS '25*
+    *Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25)*
   year: 2025
   url: https://arxiv.org/abs/2501.13308
 -
@@ -32,7 +48,7 @@
   authors: >
     Hanxiu 'Hazel' Zhu, Avanthika Senthil Kumar, Sihang Zhao, **Ru Wang**, Xin Tong, Yuhang Zhao
   conference: >
-    *To appear at ASSETS '25*
+    *Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25)*
   year: 2025
   # url: https://arxiv.org/abs/2501.14327
 -
@@ -59,7 +75,7 @@
     **Practices and Barriers of Cooking Training for Blind and Low Vision People (Poster)**
   authors: '**Ru Wang**, Nihan Zhou, Tam Nguyen, Sanbrita Mondal, Bilge Mutlu, Yuhang Zhao'
   conference: >
-    *The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)*
+    *Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)*
   year: 2023
   url: https://dl.acm.org/doi/10.1145/3597638.3614494
 -
