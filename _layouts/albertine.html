@@ -149,8 +149,8 @@ http://en.wikipedia.org/wiki/Albertine_owlet
 
       </div>
     </div>
-    <button type="button" class="fab" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
-      <i class="fa-regular fa-moon" aria-hidden="true"></i>
+    <button type="button" class="fab" id="themeToggle" aria-label="Theme: auto (matches your system) — click for light" title="Theme: auto (matches your system) — click for light">
+      <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
     </button>
   </div>
 
@@ -412,30 +412,52 @@ http://en.wikipedia.org/wiki/Albertine_owlet
         Object.keys(sectionMap).forEach(function (k) { nav.observe(document.getElementById(k)); });
       }
 
-      // Theme toggle
+      // Theme toggle — cycles Auto -> Light -> Dark -> Auto.
+      // "Auto" means no saved preference, so the page follows the OS via the
+      // prefers-color-scheme media query (data-theme is removed entirely).
       var btn = document.getElementById('themeToggle');
       var icon = btn ? btn.querySelector('i') : null;
-      function applyIcon() {
-        if (!icon) return;
-        var theme = document.documentElement.getAttribute('data-theme');
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var isDark = theme ? theme === 'dark' : prefersDark;
-        icon.className = isDark ? 'fa-regular fa-sun' : 'fa-regular fa-moon';
+
+      function currentMode() {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        return 'auto';
       }
-      applyIcon();
+
+      function applyTheme() {
+        var mode = currentMode();
+        if (mode === 'auto') {
+          document.documentElement.removeAttribute('data-theme');
+        } else {
+          document.documentElement.setAttribute('data-theme', mode);
+        }
+        if (icon) {
+          icon.className = mode === 'auto' ? 'fa-solid fa-circle-half-stroke'
+            : mode === 'light' ? 'fa-regular fa-sun'
+            : 'fa-regular fa-moon';
+        }
+        if (btn) {
+          var label = mode === 'auto' ? 'Theme: auto (matches your system) — click for light'
+            : mode === 'light' ? 'Theme: light — click for dark'
+            : 'Theme: dark — click for auto';
+          btn.setAttribute('aria-label', label);
+          btn.setAttribute('title', label);
+        }
+      }
+      applyTheme();
+
       if (btn) {
         btn.addEventListener('click', function () {
-          var current = document.documentElement.getAttribute('data-theme');
-          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          var isDark = current ? current === 'dark' : prefersDark;
-          var next = isDark ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) {}
-          applyIcon();
+          var mode = currentMode();
+          try {
+            if (mode === 'auto') localStorage.setItem('theme', 'light');
+            else if (mode === 'light') localStorage.setItem('theme', 'dark');
+            else localStorage.removeItem('theme');   // dark -> back to auto
+          } catch (e) {}
+          applyTheme();
         });
-      }
-      if (window.matchMedia) {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyIcon);
       }
 
       // ===========================================
