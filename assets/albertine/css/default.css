@@ -391,11 +391,19 @@ section p small { color: var(--muted); opacity: 1; }
   width: 100%;
   margin-top: 0;
 }
+#section-about .avatar .profile-pic.is-default {
+  position: relative;
+  z-index: 1;
+}
 #section-about .avatar .profile-pic.is-alt {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
+  /* Explicit z-index keeps the overlay on top of the default even when the
+     hover `transform` turns both images into stacking contexts (otherwise
+     paint order falls back to DOM order, hiding the overlay at night). */
+  z-index: 2;
 }
 #section-about .avatar:hover .profile-pic.is-alt { opacity: 1; }
 
