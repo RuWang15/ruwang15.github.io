@@ -339,6 +339,17 @@ http://en.wikipedia.org/wiki/Albertine_owlet
   {% endif %}
 
   <!-- ==================== -->
+  <!-- IMAGE LIGHTBOX -->
+  <!-- ==================== -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <div class="lightbox-caption" id="lightboxCaption" hidden></div>
+  </div>
+
+  <!-- ==================== -->
   <!-- FOOTER -->
   <!-- ==================== -->
   <footer>
@@ -1077,6 +1088,80 @@ http://en.wikipedia.org/wiki/Albertine_owlet
         dayImg.classList.add(night ? 'is-alt' : 'is-default');
         nightImg.classList.add(night ? 'is-default' : 'is-alt');
       })();
+
+      // ===========================================
+      // Image lightbox — click any content image to enlarge it
+      // (the profile photo is excluded; it has its own hover swap)
+      // ===========================================
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var lightboxCaption = document.getElementById('lightboxCaption');
+      var lightboxClose = document.getElementById('lightboxClose');
+
+      function captionForImage(img) {
+        if (img.alt && img.alt.trim()) return img.alt.trim();
+        // Fall back to project/design title (the <b> in the sibling text block)
+        var row = img.closest('.project-row') || img.closest('.row');
+        if (row) {
+          var title = row.querySelector('p b a, p b, h4');
+          if (title) return title.textContent.trim();
+        }
+        return '';
+      }
+
+      function openLightbox(img) {
+        if (!lightbox || !lightboxImg) return;
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || '';
+        var cap = captionForImage(img);
+        if (cap) {
+          lightboxCaption.textContent = cap;
+          lightboxCaption.hidden = false;
+        } else {
+          lightboxCaption.hidden = true;
+        }
+        lightbox.hidden = false;
+        document.body.classList.add('lightbox-open');
+        // Move focus for keyboard users
+        setTimeout(function () { lightboxClose && lightboxClose.focus(); }, 0);
+      }
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.hidden = true;
+        document.body.classList.remove('lightbox-open');
+        lightboxImg.removeAttribute('src');
+      }
+
+      // Tag eligible images and bind click handlers
+      var contentImgs = document.querySelectorAll('img');
+      contentImgs.forEach(function (img) {
+        if (img.closest('header')) return;            // skip logo
+        if (img.closest('footer')) return;
+        if (img.closest('.fab-stack')) return;
+        if (img.closest('.lens-menu')) return;
+        if (img.closest('.lightbox')) return;
+        if (img.closest('.avatar')) return;           // skip profile photo (has hover swap)
+        img.classList.add('lightbox-eligible');
+        img.addEventListener('click', function (e) {
+          // Override the wrapping <a>'s navigation, if any
+          e.preventDefault();
+          openLightbox(img);
+        });
+      });
+
+      if (lightbox) {
+        lightbox.addEventListener('click', function (e) {
+          // Close only on backdrop clicks; ignore clicks on the image, caption, or close button
+          if (e.target === lightbox) closeLightbox();
+        });
+      }
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', function (e) {
+        if (lightbox && !lightbox.hidden && (e.key === 'Escape' || e.key === 'Esc')) {
+          e.preventDefault();
+          closeLightbox();
+        }
+      });
     })();
   </script>
 </body>
