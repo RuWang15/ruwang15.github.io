@@ -176,7 +176,7 @@ http://en.wikipedia.org/wiki/Albertine_owlet
             {% elsif profile.network == 'Twitter' %}
               <a href="{{ profile.url }}" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
             {% elsif profile.network == 'CV' %}
-              <a href="{{ profile.url }}" target="_blank" aria-label="CV"><i class="fa-solid fa-file">{{ profile.note }}</i></a>
+              <a href="{{ site.baseurl }}{{ profile.url }}" target="_blank" aria-label="CV"><i class="fa-solid fa-file-lines"></i></a>
             {% endif %}
           {% endfor %}
         </div>

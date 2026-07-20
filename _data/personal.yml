@@ -25,10 +25,10 @@ profiles:
     network: Twitter
     username: Ru Wang
     url: https://twitter.com/ruw001
-  # -
-  #   network: CV
-  #   username:
-  #   url: 
+  -
+    network: CV
+    username:
+    url: /pdfs/CVR_072026.pdf
 intro:
   # title: Hello!
   body: >
